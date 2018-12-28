@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Daniel&#39;s Farmland</title>
+  
+  <subtitle>Go to the ant, you sluggard, consider its ways and be wise!</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-12-28T07:44:00.213Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Daniel Lau</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>common markdown syntax</title>
+    <link href="http://yoursite.com/2018/12/27/20181227-2/"/>
+    <id>http://yoursite.com/2018/12/27/20181227-2/</id>
+    <published>2018-12-28T06:29:50.000Z</published>
+    <updated>2018-12-28T07:44:00.213Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Markdown is a markup language with plain text formatting syntax. The two most popular usages of markdown are formatting readme files and writing posts in online forums. If you are going to be a software engineer in the future, you will use markdown a lot. </p><p>reason for writing this: for my to learn markdown + I want something in my blog. lol</p><h1 id="Basic-Syntax"><a href="#Basic-Syntax" class="headerlink" title="Basic Syntax"></a>Basic Syntax</h1><h2 id="Headings"><a href="#Headings" class="headerlink" title="Headings"></a>Headings</h2><p>Adding # in front of a word or phrase will create a heading. There are six heading level. The number of # that in front of a word or phrase represents the level of the heading.<br>note: level 1 has the largest font size.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Heading level 1</span><br><span class="line">## Heading level 2</span><br><span class="line">### Heading level 3</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">###### Heading level 6</span><br></pre></td></tr></table></figure></p><p>some of the blog frameworks would even automatically generate the tables of content for you according to the headings that you used.</p><img src="/2018/12/27/20181227-2/image2.png"><h2 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h2><p>There are two types of emphasis(I am not sure whether there are more) that you can add to the text: bold and italic.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*italic*</span><br><span class="line">**bold**</span><br><span class="line">***bold and italic***</span><br><span class="line">~~strikethrough~~</span><br></pre></td></tr></table></figure><h2 id="List"><a href="#List" class="headerlink" title="List"></a>List</h2><p>There two types of list: ordered list and unordered list.</p><h3 id="Ordered-list"><a href="#Ordered-list" class="headerlink" title="Ordered list"></a>Ordered list</h3><p>What you need to do to make an ordered list is to add numbers followed by periods.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. item 1</span><br><span class="line">2. item 2</span><br><span class="line">3. item 3</span><br></pre></td></tr></table></figure></p><h3 id="Unordered-list"><a href="#Unordered-list" class="headerlink" title="Unordered list"></a>Unordered list</h3><p>To make a unordered list, you need to add a <strong>-</strong> in front of the items.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- item 1</span><br><span class="line">- item 2</span><br><span class="line">- item 3</span><br></pre></td></tr></table></figure></p><h2 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h2><p>To make a Blockquote, you need to add a <strong>&gt;</strong> in front of a paragraph. </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt; paragraph</span><br><span class="line"></span><br><span class="line">or </span><br><span class="line"></span><br><span class="line">&gt;multiple paragraph</span><br><span class="line">&gt;</span><br><span class="line">&gt;multiple paragraph</span><br></pre></td></tr></table></figure><h2 id="Horizontal-Rules"><a href="#Horizontal-Rules" class="headerlink" title="Horizontal Rules"></a>Horizontal Rules</h2><p>To make a horizontal rule, use three or more ***.</p><h2 id="image"><a href="#image" class="headerlink" title="image"></a>image</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h1&gt;&lt;p&gt;Markdown is a markup language 
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>文章中常用的Markdown語法</title>
+    <link href="http://yoursite.com/2018/12/27/20181227-1/"/>
+    <id>http://yoursite.com/2018/12/27/20181227-1/</id>
+    <published>2018-12-28T00:36:02.000Z</published>
+    <updated>2018-12-28T03:46:59.191Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>因Markdown的「易讀易寫」，故現今很多的Blog都支持Markdown的格式。小編最近開始寫blog，所以會經常用到Markdown。</p><p>在下面，小編會分享一下我寫文章時比較常用的幾個Markdown語法。</p><h1 id="Markdown的基本語法"><a href="#Markdown的基本語法" class="headerlink" title="Markdown的基本語法"></a>Markdown的基本語法</h1><h2 id="標題"><a href="#標題" class="headerlink" title="標題"></a>標題</h2><p>假如你想要把一句子變成一個標題，你只需要在這句子前加上#。<br>注意：在#和句子的中問一定要有空格。基本上Markdown的所有標籤都需要有空格。</p><p>Markdown可以給你有6種不同層次的標題。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 第1級標題</span><br><span class="line">## 第2級標題</span><br><span class="line">### 第3級標題</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">###### 第6級標題</span><br></pre></td></tr></table></figure><p>不同等級的標題有不同的大小，以第1級為最大，第6級為最小。<br>分級的標題還有另一個好處：有一些blog會根據你Markdown的標題來為你自動生成目錄。</p><p>以下這個目錄是自動生成的。這功能省去寫作者的很多功夫。</p><img src="/2018/12/27/20181227-1/image1.png"><h2 id="斜粗體"><a href="#斜粗體" class="headerlink" title="斜粗體"></a>斜粗體</h2><p>為了強調文中重點，斜粗的運用是必不可少的。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*斜體*</span><br><span class="line">**粗體**</span><br><span class="line">***斜體加粗體***</span><br><span class="line">~~刪除線~~</span><br></pre></td></tr></table></figure><h2 id="引用-普通"><a href="#引用-普通" class="headerlink" title="引用(普通)"></a>引用(普通)</h2><p>當你想讓人知道你是在引用他人的一些東西時，你會想用到這引用區。語法如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; 填寫你要引用的東西</span><br><span class="line"></span><br><span class="line">&gt;如要引用</span><br><span class="line">多行，可以這讓做</span><br><span class="line">testing</span><br><span class="line">testing</span><br></pre></td></tr></table></figure></p><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>列表有兩種，分別為有序與無序。有序就是用次序，如數字或字母等。</p><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>用數字及.來表達有序列表。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 有序列表</span><br><span class="line">2. 有序列表</span><br><span class="line">3. 有序列表</span><br></pre></td></tr></table></figure></p><h3 id="無序列表"><a href="#無序列表" class="headerlink" title="無序列表"></a>無序列表</h3><p>「-」、「+」、「*」都可以表示無序列表。但小編一般喜歡用「-」，原因是不用按Shift鍵。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- 無序列表</span><br><span class="line">* 無序列表</span><br><span class="line">+ 無序列表</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;因Markdown的「易讀易寫」，故現今很多的Blog都支持Markdown的格式。小編最近開始寫blog，所以會經常用到Markdown。
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>About Me</title>
+    <link href="http://yoursite.com/2018/12/24/about/"/>
+    <id>http://yoursite.com/2018/12/24/about/</id>
+    <published>2018-12-25T06:18:19.000Z</published>
+    <updated>2018-12-28T06:57:20.194Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hi, there! My name is Daniel Lau. I am studying computer science in California. Most of my blog posts would be related to programming and computer science.<br>The main reason of making this blog is to share and record the CS knowledge that I have learned.</p><img src="/2018/12/24/about/buildingv.jpg">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Hi, there! My name is Daniel Lau. I am studying computer science in California. Most of my blog posts would be related to programming and
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2018/12/24/test/"/>
+    <id>http://yoursite.com/2018/12/24/test/</id>
+    <published>2018-12-25T05:50:59.000Z</published>
+    <updated>2018-12-25T05:55:14.824Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hello!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Hello!&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="測試" scheme="http://yoursite.com/categories/%E6%B8%AC%E8%A9%A6/"/>
+    
+      <category term="日記" scheme="http://yoursite.com/categories/%E6%97%A5%E8%A8%98/"/>
+    
+    
+      <category term="1" scheme="http://yoursite.com/tags/1/"/>
+    
+      <category term="2" scheme="http://yoursite.com/tags/2/"/>
+    
+      <category term="3" scheme="http://yoursite.com/tags/3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/12/24/hello-world/"/>
+    <id>http://yoursite.com/2018/12/24/hello-world/</id>
+    <published>2018-12-25T02:13:29.091Z</published>
+    <updated>2018-12-25T02:13:29.092Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
