@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-30T04:11:20.034Z</updated>
+  <updated>2018-12-30T04:12:20.464Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Four Essential Concepts of Object-Oriented Programming (Unfinished)</title>
+    <title>Four Core Features of Object-Oriented Programming (Unfinished)</title>
     <link href="http://yoursite.com//post/64433/"/>
     <id>http://yoursite.com//post/64433/</id>
     <published>2018-12-30T04:00:40.000Z</published>
-    <updated>2018-12-30T04:11:20.034Z</updated>
+    <updated>2018-12-30T04:12:20.464Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><h1 id="Encapsulation"><a href="#Encapsulation" class="headerlink" title="Encapsulation"></a>Encapsulation</h1><h1 id="Abstraction"><a href="#Abstraction" class="headerlink" title="Abstraction"></a>Abstraction</h1><h1 id="Inheritance"><a href="#Inheritance" class="headerlink" title="Inheritance"></a>Inheritance</h1><h1 id="Polymorphism"><a href="#Polymorphism" class="headerlink" title="Polymorphism"></a>Polymorphism</h1>]]></content>
     
@@ -42,9 +42,9 @@
     <link href="http://yoursite.com//post/32135/"/>
     <id>http://yoursite.com//post/32135/</id>
     <published>2018-12-28T17:23:15.000Z</published>
-    <updated>2018-12-30T04:01:57.948Z</updated>
+    <updated>2018-12-30T04:13:19.863Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Reference or pointer is a very important concept in object-oriented programming. Reference and pointer are kinds of the same concept just with different names. The following discussion will begin with a single line of code.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Human daniel = <span class="keyword">new</span> Human();</span><br></pre></td></tr></table></figure><p>related post: <a href="/post/47652">object-oriented programming</a></p><h1 id="Object-Oriented-Programming-OOP"><a href="#Object-Oriented-Programming-OOP" class="headerlink" title="Object-Oriented Programming (OOP)"></a>Object-Oriented Programming (OOP)</h1><p>Object-Oriented programming is a new approach to programming. Instead of giving a set of actions to a program (procedural programming), we use objects to be the building block of the whole program.</p><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h1 id="Example-in-Java"><a href="#Example-in-Java" class="headerlink" title="Example in Java"></a>Example in Java</h1><p>The following statement is an example of how you create an object in java.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Human daniel = <span class="keyword">new</span> Human();</span><br></pre></td></tr></table></figure><p>To create a new object in java, it involves the use of the keyword <strong>new</strong> to allocate the memory space of the object and the use of the object’s constructor, <strong>Human()</strong> in this case, to initialize the space. </p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Reference or pointer is a very important concept in object-oriented programming. Reference and pointer are kinds of the same concept just with different names. The following discussion will begin with a single line of code.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Human daniel = <span class="keyword">new</span> Human();</span><br></pre></td></tr></table></figure><p>related post: <a href="/post/64433">four core features of object-oriented programming</a></p><h1 id="Object-Oriented-Programming-OOP"><a href="#Object-Oriented-Programming-OOP" class="headerlink" title="Object-Oriented Programming (OOP)"></a>Object-Oriented Programming (OOP)</h1><p>Object-Oriented programming is a new approach to programming. Instead of giving a set of actions to a program (procedural programming), we use objects to be the building block of the whole program.</p><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h1 id="Example-in-Java"><a href="#Example-in-Java" class="headerlink" title="Example in Java"></a>Example in Java</h1><p>The following statement is an example of how you create an object in java.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Human daniel = <span class="keyword">new</span> Human();</span><br></pre></td></tr></table></figure><p>To create a new object in java, it involves the use of the keyword <strong>new</strong> to allocate the memory space of the object and the use of the object’s constructor, <strong>Human()</strong> in this case, to initialize the space. </p>]]></content>
     
     <summary type="html">
     
