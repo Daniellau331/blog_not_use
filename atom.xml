@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-30T04:00:40.900Z</updated>
+  <updated>2018-12-30T04:06:33.242Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,20 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>20181229-1</title>
+    <title>Four Essential Concepts of Object-Oriented Programming</title>
     <link href="http://yoursite.com//post/64433/"/>
     <id>http://yoursite.com//post/64433/</id>
     <published>2018-12-30T04:00:40.000Z</published>
-    <updated>2018-12-30T04:00:40.900Z</updated>
+    <updated>2018-12-30T04:06:33.242Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h1&gt;
+      
     
     </summary>
     
