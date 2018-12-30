@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-30T04:41:40.055Z</updated>
+  <updated>2018-12-30T05:52:07.735Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com//post/64433/"/>
     <id>http://yoursite.com//post/64433/</id>
     <published>2018-12-30T04:00:40.000Z</published>
-    <updated>2018-12-30T04:41:40.055Z</updated>
+    <updated>2018-12-30T05:52:07.735Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>There are four core concepts in object-oriented programming. They are encapsulation, abstraction, inheritance and polymorphism.  </p><p>Let’s talk about what object is first.</p><p><strong>Object</strong></p><blockquote><p>A object is an entity that contains data and methods. </p></blockquote><h1 id="Encapsulation"><a href="#Encapsulation" class="headerlink" title="Encapsulation"></a>Encapsulation</h1><h1 id="Abstraction"><a href="#Abstraction" class="headerlink" title="Abstraction"></a>Abstraction</h1><h1 id="Inheritance"><a href="#Inheritance" class="headerlink" title="Inheritance"></a>Inheritance</h1><h1 id="Polymorphism"><a href="#Polymorphism" class="headerlink" title="Polymorphism"></a>Polymorphism</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>There are four core concepts in object-oriented programming. They are encapsulation, abstraction, inheritance and polymorphism.  </p><p>Let’s talk about what object (in OOP) is first.</p><p><strong>Object</strong></p><blockquote><p>A object is an entity that contains data and methods. </p></blockquote><h1 id="Encapsulation"><a href="#Encapsulation" class="headerlink" title="Encapsulation"></a>Encapsulation</h1><h1 id="Abstraction"><a href="#Abstraction" class="headerlink" title="Abstraction"></a>Abstraction</h1><h1 id="Inheritance"><a href="#Inheritance" class="headerlink" title="Inheritance"></a>Inheritance</h1><h1 id="Polymorphism"><a href="#Polymorphism" class="headerlink" title="Polymorphism"></a>Polymorphism</h1>]]></content>
     
     <summary type="html">
     
