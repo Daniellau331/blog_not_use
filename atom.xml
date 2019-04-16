@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-16T00:35:35.560Z</updated>
+  <updated>2019-04-16T00:45:42.841Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo Blog有用的links</title>
+    <link href="http://yoursite.com//post/37442/"/>
+    <id>http://yoursite.com//post/37442/</id>
+    <published>2019-04-16T00:39:57.000Z</published>
+    <updated>2019-04-16T00:45:42.841Z</updated>
+    
+    <content type="html"><![CDATA[<p>由於現在會經常去寫blog，所以在這留幾個我常會去的links。</p><ul><li><a href="https://markdown.tw/" target="_blank" rel="noopener">https://markdown.tw/</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;由於現在會經常去寫blog，所以在這留幾個我常會去的links。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://markdown.tw/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://markdown.tw/&lt;/a&gt;&lt;/li&gt;
+      
+    
+    </summary>
+    
+      <category term="學習" scheme="http://yoursite.com/categories/%E5%AD%B8%E7%BF%92/"/>
+    
+    
+      <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>雪球速讀法(非讀後感)......</title>
