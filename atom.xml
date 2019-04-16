@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-16T01:31:37.813Z</updated>
+  <updated>2019-04-16T01:37:35.806Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>反思-有關於blog和oneNote</title>
+    <link href="http://yoursite.com//post/28114/"/>
+    <id>http://yoursite.com//post/28114/</id>
+    <published>2019-04-16T01:33:09.000Z</published>
+    <updated>2019-04-16T01:37:35.806Z</updated>
+    
+    <content type="html"><![CDATA[<p>自我買了surface pro之後，我就開始用oneNote去做筆記。</p><h1 id="oneNote筆記的大致結構"><a href="#oneNote筆記的大致結構" class="headerlink" title="oneNote筆記的大致結構"></a>oneNote筆記的大致結構</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;自我買了surface pro之後，我就開始用oneNote去做筆記。&lt;/p&gt;
+&lt;h1 id=&quot;oneNote筆記的大致結構&quot;&gt;&lt;a href=&quot;#oneNote筆記的大致結構&quot; class=&quot;headerlink&quot; title=&quot;oneNote筆記的大致結構&quot;&gt;&lt;/a&gt;o
+      
+    
+    </summary>
+    
+      <category term="學習" scheme="http://yoursite.com/categories/%E5%AD%B8%E7%BF%92/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo Blog的useful Links</title>
