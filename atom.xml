@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-16T02:39:24.841Z</updated>
+  <updated>2019-04-16T02:52:51.484Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>節約用水的良方</title>
+    <link href="http://yoursite.com//post/28294/"/>
+    <id>http://yoursite.com//post/28294/</id>
+    <published>2019-04-16T02:46:03.000Z</published>
+    <updated>2019-04-16T02:52:51.484Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨天我們家的熱水器壞了，所以被迫要洗一個冷水澡。我所住的地方晚上比較冷，所以水變的很冷。我記得昨天洗的澡是我從出來到現在用時最短的一次，不到兩分鐘。我想，如果我們家不去修這個熱水器的話，我們一年肯定能省很多的水……</p><p>另外，因為這一件事情，我才知道美國有些熱水器是火在底下燒的……長見識了哈哈！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;昨天我們家的熱水器壞了，所以被迫要洗一個冷水澡。我所住的地方晚上比較冷，所以水變的很冷。我記得昨天洗的澡是我從出來到現在用時最短的一次，不到兩分鐘。我想，如果我們家不去修這個熱水器的話，我們一年肯定能省很多的水……&lt;/p&gt;
+&lt;p&gt;另外，因為這一件事情，我才知道美國有些熱水器
+      
+    
+    </summary>
+    
+      <category term="生活點滴" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB%E9%BB%9E%E6%BB%B4/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Programmer的生物課</title>
