@@ -120,7 +120,7 @@
 <meta property="og:image" content="http://yoursite.com/post/26965/photo1.PNG">
 <meta property="og:image" content="http://yoursite.com/post/26965/photo2.PNG">
 <meta property="og:image" content="http://yoursite.com/post/26965/photo3.PNG">
-<meta property="og:updated_time" content="2019-04-18T18:17:46.930Z">
+<meta property="og:updated_time" content="2019-04-18T18:46:04.851Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Programmer的農業課">
 <meta name="twitter:description" content="(建設中，請耐心等候) 哈哈，今天我想寫的東西是tree。tree是一種數據結構，在計算機的世界裡是很重要的。你問我有什麼具體用途？問的好，我就舉一個用途吧。這個tree可以用在寫一個compiler，你說是不是很有用呢，哈哈！ tree的樣子 我們這個tree和平常在大自然中見到的tree樣子有一點點不一樣。主要分別是，我們這個是反的，最頂的是root，下面的是leaves。是不是很有趣呢？哈哈">
@@ -426,7 +426,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-04-18 11:17:46" itemprop="dateModified" datetime="2019-04-18T11:17:46-07:00">2019-04-18</time>
+                <time title="Modified: 2019-04-18 11:46:04" itemprop="dateModified" datetime="2019-04-18T11:46:04-07:00">2019-04-18</time>
               
             
           </span>
@@ -471,7 +471,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">674</span>
+                <span title="Symbols count in article">1k</span>
               
 
               
@@ -513,7 +513,9 @@
 </ol>
 <h1 id="Binary-tree的結構"><a href="#Binary-tree的結構" class="headerlink" title="Binary tree的結構"></a>Binary tree的結構</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">TreeNode</span>&#123;</span></span><br><span class="line">	ItemType info;</span><br><span class="line">	TreeNode* left;</span><br><span class="line">	TreeNode* right;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <img src="/post/26965/photo3.PNG">
-<h1 id="Binary-search-tree-insertion"><a href="#Binary-search-tree-insertion" class="headerlink" title="Binary search tree insertion"></a>Binary search tree insertion</h1><p>接下來要講的是如何insert node在Binary search tree。</p>
+<h1 id="Searching-for-a-value"><a href="#Searching-for-a-value" class="headerlink" title="Searching for a value"></a>Searching for a value</h1><p>接下來要講的是searching的算法</p>
+<p>以下的這個算法是<em>不用recursion</em>的</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">searchNoRecursion</span><span class="params">(node* leaf, <span class="keyword">int</span> key)</span></span>&#123;</span><br><span class="line">	<span class="keyword">bool</span> found = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//這算法用while loop，不用recursion，從上向下找</span></span><br><span class="line">	<span class="comment">//找不到的話，按key的大小去決定向左或是向右</span></span><br><span class="line">	<span class="keyword">while</span>(leaf!=<span class="literal">NULL</span> &amp;&amp; !found)&#123;</span><br><span class="line">		<span class="keyword">if</span>(key==leaf-&gt;key)&#123;</span><br><span class="line">			found = <span class="literal">true</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span> (key&lt;leaf-&gt;key)</span><br><span class="line">			leaf = leaf-&gt;left;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			leaf = leaf-&gt;right;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> found;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -765,7 +767,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#tree的樣子"><span class="nav-number">1.</span> <span class="nav-text">tree的樣子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什麼是Binary-Trees"><span class="nav-number">2.</span> <span class="nav-text">什麼是Binary Trees</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Binary-search-tree"><span class="nav-number">3.</span> <span class="nav-text">Binary search tree</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Binary-tree的結構"><span class="nav-number">4.</span> <span class="nav-text">Binary tree的結構</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Binary-search-tree-insertion"><span class="nav-number">5.</span> <span class="nav-text">Binary search tree insertion</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#tree的樣子"><span class="nav-number">1.</span> <span class="nav-text">tree的樣子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什麼是Binary-Trees"><span class="nav-number">2.</span> <span class="nav-text">什麼是Binary Trees</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Binary-search-tree"><span class="nav-number">3.</span> <span class="nav-text">Binary search tree</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Binary-tree的結構"><span class="nav-number">4.</span> <span class="nav-text">Binary tree的結構</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Searching-for-a-value"><span class="nav-number">5.</span> <span class="nav-text">Searching for a value</span></a></li></ol></div>
             
 
           </div>
@@ -806,7 +808,7 @@
     
       <span class="post-meta-item-text">Symbols count total: </span>
     
-    <span title="Symbols count total">7k</span>
+    <span title="Symbols count total">8k</span>
   
 
   
@@ -827,7 +829,7 @@
 
   <div class="powered-by"></div>
 
-  <span class="post-count">Total Word Count: 2.8k</span>
+  <span class="post-count">Total Word Count: 2.9k</span>
 
 
 -->
