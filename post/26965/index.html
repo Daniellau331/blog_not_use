@@ -120,7 +120,7 @@
 <meta property="og:image" content="http://yoursite.com/post/26965/photo1.PNG">
 <meta property="og:image" content="http://yoursite.com/post/26965/photo2.PNG">
 <meta property="og:image" content="http://yoursite.com/post/26965/photo3.PNG">
-<meta property="og:updated_time" content="2019-04-21T18:49:43.558Z">
+<meta property="og:updated_time" content="2019-04-21T18:59:57.013Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Binary Tree筆記">
 <meta name="twitter:description" content="(建設中，請耐心等候) 哈哈，今天我想寫的東西是tree。tree是一種數據結構，在計算機的世界裡是很重要的。你問我有什麼具體用途？問的好，我就舉一個用途吧。這個tree可以用在寫一個compiler，你說是不是很有用呢，哈哈！ tree的樣子 我們這個tree和平常在大自然中見到的tree樣子有一點點不一樣。主要分別是，我們這個是反的，最頂的是root，下面的是leaves。是不是很有趣呢？哈哈">
@@ -426,7 +426,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-04-21 11:49:43" itemprop="dateModified" datetime="2019-04-21T11:49:43-07:00">2019-04-21</time>
+                <time title="Modified: 2019-04-21 11:59:57" itemprop="dateModified" datetime="2019-04-21T11:59:57-07:00">2019-04-21</time>
               
             
           </span>
@@ -471,7 +471,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">1.8k</span>
+                <span title="Symbols count in article">2k</span>
               
 
               
@@ -525,7 +525,17 @@
 <li>直接刪，然後叫node的parent指向null</li>
 </ul>
 </li>
-<li></li>
+<li>這個Node有一個child<ul>
+<li>將這個node指向要被刪的那node的parent</li>
+<li>刪除那個node</li>
+</ul>
+</li>
+<li>這個Node有兩個children (這有兩個選擇，但我要列其中的一個)<ul>
+<li>去右邊的那child，然後去到底。</li>
+<li>將這個值放到我們本來要刪的那個node</li>
+<li>刪了那個最低的child</li>
+</ul>
+</li>
 </ol>
 
       
@@ -840,7 +850,7 @@
 
   <div class="powered-by"></div>
 
-  <span class="post-count">Total Word Count: 3.3k</span>
+  <span class="post-count">Total Word Count: 3.4k</span>
 
 
 -->
