@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-21T04:54:30.760Z</updated>
+  <updated>2019-04-21T05:03:02.513Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>收到大學的通知</title>
+    <link href="http://yoursite.com//post/62046/"/>
+    <id>http://yoursite.com//post/62046/</id>
+    <published>2019-04-21T04:59:32.000Z</published>
+    <updated>2019-04-21T05:03:02.513Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨天下午我準備去洗澡時，收到這個通知書。很好心，很期待在這可以學到很多的知識。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        
+&lt;p&gt;昨天下午我準備去洗澡時，收到這個通知書。很好心，很期待在這可以學到很多的知識。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="生活點滴" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB%E9%BB%9E%E6%BB%B4/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>要開始Van Life？</title>
