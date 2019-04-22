@@ -120,7 +120,7 @@
 <meta property="og:image" content="http://yoursite.com/post/26965/photo1.PNG">
 <meta property="og:image" content="http://yoursite.com/post/26965/photo2.PNG">
 <meta property="og:image" content="http://yoursite.com/post/26965/photo3.PNG">
-<meta property="og:updated_time" content="2019-04-21T23:32:47.354Z">
+<meta property="og:updated_time" content="2019-04-22T03:38:06.069Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Binary Tree筆記">
 <meta name="twitter:description" content="(建設中，請耐心等候) 哈哈，今天我想寫的東西是tree。tree是一種數據結構，在計算機的世界裡是很重要的。你問我有什麼具體用途？問的好，我就舉一個用途吧。這個tree可以用在寫一個compiler，你說是不是很有用呢，哈哈！ tree的樣子 我們這個tree和平常在大自然中見到的tree樣子有一點點不一樣。主要分別是，我們這個是反的，最頂的是root，下面的是leaves。是不是很有趣呢？哈哈">
@@ -426,7 +426,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-04-21 16:32:47" itemprop="dateModified" datetime="2019-04-21T16:32:47-07:00">2019-04-21</time>
+                <time title="Modified: 2019-04-21 20:38:06" itemprop="dateModified" datetime="2019-04-21T20:38:06-07:00">2019-04-21</time>
               
             
           </span>
@@ -471,7 +471,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">2k</span>
+                <span title="Symbols count in article">2.8k</span>
               
 
               
@@ -537,8 +537,7 @@
 </ul>
 </li>
 </ol>
-<p>我覺得我應該把一些圖在這裡，要不然的話，真的很難去理解上面是在說些什麼。</p>
-
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">node* <span class="title">deleteNode</span><span class="params">(node* root, <span class="keyword">int</span> data)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(root == <span class="literal">NULL</span>) <span class="keyword">return</span> root;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(data &lt; root-&gt;data) root-&gt;left = deleteNode(root-&gt;left,data);</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span> (data &gt; root-&gt;data) root-&gt;right = deleteNode(root-&gt;right,data);</span><br><span class="line">	<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="comment">// Case 1 </span></span><br><span class="line">		<span class="keyword">if</span>(root-&gt;left == <span class="literal">NULL</span> &amp;&amp; root-&gt;right == <span class="literal">NULL</span>) &#123;</span><br><span class="line">			<span class="keyword">delete</span> root;</span><br><span class="line">			root = <span class="literal">NULL</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//Case 2</span></span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(root-&gt;left == <span class="literal">NULL</span>) &#123;</span><br><span class="line">			node *temp = root;</span><br><span class="line">			root = root-&gt;right;</span><br><span class="line">			<span class="keyword">delete</span> temp;</span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span>(root-&gt;right == <span class="literal">NULL</span>) &#123;</span><br><span class="line">			node *temp = root;</span><br><span class="line">			root = root-&gt;left;</span><br><span class="line">			<span class="keyword">delete</span> temp;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">// case 3</span></span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			node *temp = FindMin(root-&gt;right);</span><br><span class="line">			root-&gt;data = temp-&gt;data;</span><br><span class="line">			root-&gt;right = deleteNode(root-&gt;right,temp-&gt;data);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> root;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -832,7 +831,7 @@
     
       <span class="post-meta-item-text">Symbols count total: </span>
     
-    <span title="Symbols count total">9k</span>
+    <span title="Symbols count total">10k</span>
   
 
   
@@ -853,7 +852,7 @@
 
   <div class="powered-by"></div>
 
-  <span class="post-count">Total Word Count: 3.5k</span>
+  <span class="post-count">Total Word Count: 3.6k</span>
 
 
 -->
