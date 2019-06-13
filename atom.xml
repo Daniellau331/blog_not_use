@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-13T04:10:58.886Z</updated>
+  <updated>2019-06-13T23:32:11.037Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>日記 - 061319</title>
+    <link href="http://yoursite.com//post/27181/"/>
+    <id>http://yoursite.com//post/27181/</id>
+    <published>2019-06-13T23:20:15.000Z</published>
+    <updated>2019-06-13T23:32:11.037Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天試了去申請兩張信用卡，試了兩個信用卡公司。一個是American Express，另一個是Discovery。American Express的那一個要我提交更多的資<br>料。而Discovery那個就直接過了。</p><img src="/post/undefined/photo1.JPG"><p>現在這個卡的信用額並不高，只有效$1750，需要一些時間去提高。 太好了，申請信用卡的過程比我所想像的更順利。 以後的學費，就是打算去用信用卡的交的，兩年之後，我就可以給自己養成一個挻好的credit score。 </p><p>Credit Score這東西在美國是特別重要的，所以有想以後留美工作或生活的朋友，要多多留意自己的credit。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天試了去申請兩張信用卡，試了兩個信用卡公司。一個是American Express，另一個是Discovery。American Express的那一個要我提交更多的資&lt;br&gt;料。而Discovery那個就直接過了。&lt;/p&gt;
+&lt;img src=&quot;/post/undefin
+      
+    
+    </summary>
+    
+      <category term="學習" scheme="http://yoursite.com/categories/%E5%AD%B8%E7%BF%92/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>IPA - 筆記</title>
@@ -478,27 +502,6 @@
       
         &lt;p&gt;(爛尾了，不刪了，給個紀念，哈哈)&lt;/p&gt;
 &lt;h1 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h1&gt;&lt;p&gt;Refer
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Common Markdown Syntax</title>
-    <link href="http://yoursite.com//post/47652/"/>
-    <id>http://yoursite.com//post/47652/</id>
-    <published>2018-12-28T06:29:50.000Z</published>
-    <updated>2019-04-16T04:48:42.216Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Markdown is a markup language with plain text formatting syntax. The two most popular usages of markdown are formatting readme files and writing posts in online forums. If you are going to be a software engineer in the future, you will use markdown a lot. </p><p>reason for writing this: for my to learn markdown + want to post something on my blog. lol</p><h1 id="Basic-Syntax"><a href="#Basic-Syntax" class="headerlink" title="Basic Syntax"></a>Basic Syntax</h1><h2 id="Headings"><a href="#Headings" class="headerlink" title="Headings"></a>Headings</h2><p>Adding # in front of a word or phrase will create a heading. There are six heading level. The number of # that in front of a word or phrase represents the level of the heading.<br>note: level 1 has the largest font size.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Heading level 1</span><br><span class="line">## Heading level 2</span><br><span class="line">### Heading level 3</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">###### Heading level 6</span><br></pre></td></tr></table></figure></p><p>some of the blog frameworks would even automatically generate the tables of content for you according to the headings that you used.</p><img src="/post/47652/image2.png"><h2 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h2><p>There are two types of emphasis(I am not sure whether there are more) that you can add to the text: bold and italic.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*italic*</span><br><span class="line">**bold**</span><br><span class="line">***bold and italic***</span><br><span class="line">~~strikethrough~~</span><br></pre></td></tr></table></figure><h2 id="List"><a href="#List" class="headerlink" title="List"></a>List</h2><p>There two types of list: ordered list and unordered list.</p><h3 id="Ordered-list"><a href="#Ordered-list" class="headerlink" title="Ordered list"></a>Ordered list</h3><p>What you need to do to make an ordered list is to add numbers followed by periods.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. item 1</span><br><span class="line">2. item 2</span><br><span class="line">3. item 3</span><br></pre></td></tr></table></figure></p><h3 id="Unordered-list"><a href="#Unordered-list" class="headerlink" title="Unordered list"></a>Unordered list</h3><p>To make a unordered list, you need to add a <strong>-</strong> in front of the items.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- item 1</span><br><span class="line">- item 2</span><br><span class="line">- item 3</span><br></pre></td></tr></table></figure></p><h2 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h2><p>To make a Blockquote, you need to add a <strong>&gt;</strong> in front of a paragraph. </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt; paragraph</span><br><span class="line"></span><br><span class="line">or </span><br><span class="line"></span><br><span class="line">&gt;multiple paragraph</span><br><span class="line">&gt;</span><br><span class="line">&gt;multiple paragraph</span><br></pre></td></tr></table></figure><h2 id="Horizontal-Rules"><a href="#Horizontal-Rules" class="headerlink" title="Horizontal Rules"></a>Horizontal Rules</h2><p>To make a horizontal rule, use three or more ***.</p><h2 id="image"><a href="#image" class="headerlink" title="image"></a>image</h2><p>To insert a picture, use the following syntax.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![alt text](link of the picture)</span><br></pre></td></tr></table></figure><p>If you also use Hexo to build your blog, I recommend you to use asset folders to upload your pictures.<br>It is easier to manage your pictures by using asset folders. </p><p>More Info:  <a href="https://hexo.io/docs/asset-folders.html" target="_blank" rel="noopener">Asset Folders - Hexo</a></p><h2 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h2><p>To insert a link, use the following syntax.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[alt text](link)</span><br></pre></td></tr></table></figure><p>Note: it looks like serting a picture, but they are different!</p><h2 id="Code-Block"><a href="#Code-Block" class="headerlink" title="Code Block"></a>Code Block</h2><p>Nearly forget to mention the code block feature.</p><img src="/post/47652/image1.png"><p>These are the common features I use for writing my blog.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h1&gt;&lt;p&gt;Markdown is a markup language 
       
     
     </summary>
