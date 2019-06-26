@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-20T00:33:58.984Z</updated>
+  <updated>2019-06-26T04:18:08.717Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>兩年計劃</title>
+    <link href="http://yoursite.com//post/10641/"/>
+    <id>http://yoursite.com//post/10641/</id>
+    <published>2019-06-26T04:18:08.000Z</published>
+    <updated>2019-06-26T04:18:08.717Z</updated>
+    
+    <content type="html"><![CDATA[<p>這幾天都在看計算機的東西，也看了一些關於找工作的YouTube videos。特別是看完這些有關找工作的videos後，我心裡產生了強烈的不安和焦慮。現在要在美國找份software engineer的工作，隨隨便便都要經過5、6輪面試。多輪面試意味着，見工者必需具有真才實學，難以蒙混過關。</p><p>既然找工作要真才實學，那我只好在這一段時間內好好去裝備自己。</p><p>由於還有兩年就要畢業了，所以就叫這計劃兩年計劃。</p><p>計劃內容(會更新)：</p><ul><li>每天刷一題leetcode</li><li>一有空就寫一些程序 (什麼叫一有空？什麼叫一些？……我也覺得這說的很不具體，但的確不敢寫具體的)</li><li>學習別人的原碼，做筆記</li></ul><p>希望自己這兩年能堅持的去學習，不要鬆懈。加油！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;這幾天都在看計算機的東西，也看了一些關於找工作的YouTube videos。特別是看完這些有關找工作的videos後，我心裡產生了強烈的不安和焦慮。現在要在美國找份software engineer的工作，隨隨便便都要經過5、6輪面試。多輪面試意味着，見工者必需具有真才實
+      
+    
+    </summary>
+    
+      <category term="學習" scheme="http://yoursite.com/categories/%E5%AD%B8%E7%BF%92/"/>
+    
+    
+      <category term="計劃" scheme="http://yoursite.com/tags/%E8%A8%88%E5%8A%83/"/>
+    
+  </entry>
   
   <entry>
     <title>學習方法的反思</title>
@@ -487,28 +512,6 @@
     </summary>
     
       <category term="生活點滴" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB%E9%BB%9E%E6%BB%B4/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Four Essential Features of Object-Oriented Programming (Unfinished)</title>
-    <link href="http://yoursite.com//post/64433/"/>
-    <id>http://yoursite.com//post/64433/</id>
-    <published>2018-12-30T04:00:40.000Z</published>
-    <updated>2019-04-16T04:42:04.723Z</updated>
-    
-    <content type="html"><![CDATA[<p>(爛尾了，哈哈)</p><h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>There are four core concepts in object-oriented programming. They are encapsulation, abstraction, inheritance and polymorphism.  </p><p>In OOP, program consists of a set of objects. </p><img src="/post/64433/Sketch002.jpg"><p>In the world of OOP, almost everything is an object. </p><p>Let’s look at the following example. Sorry for the ugly drawing.<br><img src="/post/64433/Sketch003.jpg"></p><p>This example is going to show the power of object-oriented programming. Let’s imagine that you are asked to make a car. Then, you will start to think what are the components of a car. Battery, axle, brakes, doors, windows, these are the examples of components. In object-oriented programming, we call these component objects. </p><p><strong>Object</strong></p><blockquote><p>A object is an entity that contains data and methods. </p></blockquote><p>Note: object can also be the data of other objects.</p><p>Every object contains data and methods.</p> <img src="/post/64433/Sketch004.jpg"><p><strong>Data</strong></p><blockquote><p>Information that stored in an object.</p></blockquote><p><strong>Method</strong></p><blockquote><p>actions that an object can do. </p></blockquote><p>Note: There is difference between classes and instances. classes is the blueprints for new object, while instance is the object that is created from its blueprint(class). </p><h1 id="Encapsulation"><a href="#Encapsulation" class="headerlink" title="Encapsulation"></a>Encapsulation</h1><blockquote><p>Hiding the implementation details of an object. </p></blockquote><p>To understand the concept of encapsulation, recall the analogy of cars as objects. </p><h2 id="Benefit-of-Encapsulation"><a href="#Benefit-of-Encapsulation" class="headerlink" title="Benefit of Encapsulation"></a>Benefit of Encapsulation</h2><ul><li>to protect program data</li><li>clients can use the program without any understanding of the implementation details</li></ul><h1 id="Abstraction"><a href="#Abstraction" class="headerlink" title="Abstraction"></a>Abstraction</h1><h1 id="Inheritance"><a href="#Inheritance" class="headerlink" title="Inheritance"></a>Inheritance</h1><h1 id="Polymorphism"><a href="#Polymorphism" class="headerlink" title="Polymorphism"></a>Polymorphism</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;(爛尾了，哈哈)&lt;/p&gt;
-&lt;h1 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h1&gt;&lt;p&gt;There are four
-      
-    
-    </summary>
     
     
   </entry>
