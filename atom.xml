@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-29T03:36:22.035Z</updated>
+  <updated>2019-06-29T05:26:31.985Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Single Variable Calculus - 介紹 (1)</title>
+    <link href="http://yoursite.com//post/33193/"/>
+    <id>http://yoursite.com//post/33193/</id>
+    <published>2019-06-29T05:26:31.000Z</published>
+    <updated>2019-06-29T05:26:31.985Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="這是什麼？"><a href="#這是什麼？" class="headerlink" title="這是什麼？"></a>這是什麼？</h1><p>這是一門MIT的公開課，是Calculus的第一門課。這是免費的，而是人人都可以去學。<br>以下是個公開課的Link，有興趣的朋友可以去看看。<br><a href="https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/index.htm" target="_blank" rel="noopener">text</a></p><h1 id="為什麼這個？"><a href="#為什麼這個？" class="headerlink" title="為什麼這個？"></a>為什麼這個？</h1><p>大學叫這門課Cal 1，我其實早在幾年前就已經在大學裡修過這門課了，但具體內容早就忘光了。幾天前認識了一個在早稻田大學的計算機博士，他是研究AI的。有幸跟他聊了一下關於AI的東西，知道了研究需要頗為紮實的數學根基。所以我就打算在這個假期去重新學一下數學。</p><h1 id="Big-picture-of-this-course"><a href="#Big-picture-of-this-course" class="headerlink" title="Big picture of this course"></a>Big picture of this course</h1><p>這門課分為五個部分。見下圖。<br><img src="/post/33193/photo1.PNG"></p><h1 id="目錄"><a href="#目錄" class="headerlink" title="目錄"></a>目錄</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;這是什麼？&quot;&gt;&lt;a href=&quot;#這是什麼？&quot; class=&quot;headerlink&quot; title=&quot;這是什麼？&quot;&gt;&lt;/a&gt;這是什麼？&lt;/h1&gt;&lt;p&gt;這是一門MIT的公開課，是Calculus的第一門課。這是免費的，而是人人都可以去學。&lt;br&gt;以下是個公開課的Lin
+      
+    
+    </summary>
+    
+    
+      <category term="Single Variable Calculus" scheme="http://yoursite.com/tags/Single-Variable-Calculus/"/>
+    
+  </entry>
   
   <entry>
     <title>兩年計劃</title>
@@ -489,29 +512,6 @@
     </summary>
     
       <category term="學習" scheme="http://yoursite.com/categories/%E5%AD%B8%E7%BF%92/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>我會在這Blog上寫些什麼？</title>
-    <link href="http://yoursite.com//post/36504/"/>
-    <id>http://yoursite.com//post/36504/</id>
-    <published>2019-04-15T19:56:46.000Z</published>
-    <updated>2019-04-16T04:05:48.778Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="我寫blog的動機、原因"><a href="#我寫blog的動機、原因" class="headerlink" title="我寫blog的動機、原因"></a>我寫blog的動機、原因</h1><p>一閞始(約4個月前)我想寫blog的原因是為了將來好找工作。但是我很快就失去了動力，然後就没堅持下去。  </p><p>這一次，我寫blog，没有很明確的目的……只是為了自己開心，而去寫的。如果硬要找一個原因的話，我覺得可能是因為孤獨。不知道從什麼時候開始，我就不太跟朋友聯繫，過了一段時間之後，我發現我可能一個月才會和一些朋友去聊一下天。我想，我寫blog的原因，應該是為了滿足自己想說話，想表達自己的這一個很人類的需要吧。</p><h1 id="我會在這寫些什麼？"><a href="#我會在這寫些什麼？" class="headerlink" title="我會在這寫些什麼？"></a>我會在這寫些什麼？</h1><p>我會在這寫任何的東西，學習的，生活的。這一個blog的定位就是没有定位，哈哈。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;我寫blog的動機、原因&quot;&gt;&lt;a href=&quot;#我寫blog的動機、原因&quot; class=&quot;headerlink&quot; title=&quot;我寫blog的動機、原因&quot;&gt;&lt;/a&gt;我寫blog的動機、原因&lt;/h1&gt;&lt;p&gt;一閞始(約4個月前)我想寫blog的原因是為了將來好找工作。
-      
-    
-    </summary>
-    
-      <category term="生活點滴" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB%E9%BB%9E%E6%BB%B4/"/>
     
     
   </entry>
