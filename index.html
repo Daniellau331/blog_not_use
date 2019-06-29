@@ -1,3059 +1,1428 @@
 <!DOCTYPE html>
+<html lang="en">
+    <!-- title -->
 
 
 
 
+<!-- keywords -->
 
 
 
 
-
-
-
-
-  
-
-
-<html class="theme-next gemini use-motion" lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
-
-
-
-
-
-
-
-
-
-<script id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '6.6.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
-    fancybox: true,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Daniel&#39;s Farmland">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Daniel&#39;s Farmland">
-<meta property="og:locale" content="en">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Daniel&#39;s Farmland">
-
-
-
-  <link rel="alternate" href="/atom.xml" title="Daniel's Farmland" type="application/atom+xml">
-
-
-
-
-  <link rel="canonical" href="http://yoursite.com/">
-
-
-
-<script id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
-
-  <title>Daniel's Farmland</title>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  <noscript>
-  <style>
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
-
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="Daniel Lau">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Daniel Lau">
+    
+    <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
+    
+    <meta name="description" content="">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>fi3ework&#39;s Studio</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
     }
 
-    .use-motion .logo-line-before i { left: initial; }
-    .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
+    body {
+        margin: 0;
+    }
 
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+(function( w ){
+	"use strict";
+	// rel=preload support test
+	if( !w.loadCSS ){
+		w.loadCSS = function(){};
+	}
+	// define on the loadCSS obj
+	var rp = loadCSS.relpreload = {};
+	// rel=preload feature support test
+	// runs once and returns a function for compat purposes
+	rp.support = (function(){
+		var ret;
+		try {
+			ret = w.document.createElement( "link" ).relList.supports( "preload" );
+		} catch (e) {
+			ret = false;
+		}
+		return function(){
+			return ret;
+		};
+	})();
+
+	// if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+	// then change that media back to its intended value on load
+	rp.bindMediaToggle = function( link ){
+		// remember existing media attr for ultimate state, or default to 'all'
+		var finalMedia = link.media || "all";
+
+		function enableStylesheet(){
+			link.media = finalMedia;
+		}
+
+		// bind load handlers to enable media
+		if( link.addEventListener ){
+			link.addEventListener( "load", enableStylesheet );
+		} else if( link.attachEvent ){
+			link.attachEvent( "onload", enableStylesheet );
+		}
+
+		// Set rel and non-applicable media type to start an async request
+		// note: timeout allows this to happen async to let rendering continue in IE
+		setTimeout(function(){
+			link.rel = "stylesheet";
+			link.media = "only x";
+		});
+		// also enable media after 3 seconds,
+		// which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+		setTimeout( enableStylesheet, 3000 );
+	};
+
+	// loop through link elements in DOM
+	rp.poly = function(){
+		// double check this to prevent external calls from running
+		if( rp.support() ){
+			return;
+		}
+		var links = w.document.getElementsByTagName( "link" );
+		for( var i = 0; i < links.length; i++ ){
+			var link = links[ i ];
+			// qualify links to those with rel=preload and as=style attrs
+			if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+				// prevent rerunning on link
+				link.setAttribute( "data-loadcss", true );
+				// bind listeners to toggle media back
+				rp.bindMediaToggle( link );
+			}
+		}
+	};
+
+	// if unsupported, run the polyfill
+	if( !rp.support() ){
+		// run once at least
+		rp.poly();
+
+		// rerun poly on an interval until onload
+		var run = w.setInterval( rp.poly, 500 );
+		if( w.addEventListener ){
+			w.addEventListener( "load", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		} else if( w.attachEvent ){
+			w.attachEvent( "onload", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		}
+	}
+
+
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ) );
+</script>
+
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script">
+    <link rel="preload" href="/scripts/main.js" as="script">
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin="">
+    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin="">
+    
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="en">
-
-  
-  
     
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
+        <body class="home-body">
     
+    
+<header class="header index-header">
 
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Daniel's Farmland</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <a class="home-link" href="/">fi3ework's Studio.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style="
+
+
+
+
+
+
+
+height:50vh;
+">
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 文章页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            fi3ework's Studio.
+            <!-- 文章页  -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+                it's better to burn out than to fade away
+            
+            <!-- 文章页  -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
     </div>
-    
-      
-        <p class="site-subtitle">Go to the ant, you sluggard, consider its ways and be wise!</p>
-      
-    
-    
-  </div>
-
-  <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
 </div>
-
-
-
-<nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home menu-item-active">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
-
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-
-  
-</nav>
-
-
-
-  
-
-
-
-</div>
-    </header>
-
-    
-
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-            
-
-          
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/4103/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Daniel Lau">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Daniel's Farmland">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/4103/" class="post-title-link" itemprop="url">置頂</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-		
-		  <i class="fa fa-thumb-tack"></i>
-		  <font color="7D26CD">Sticky</font>
-		  <span class="post-meta-divider">|</span>
-		
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-15 23:40:13" itemprop="dateCreated datePublished" datetime="2019-04-15T23:40:13-07:00">2019-04-15</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-06-25 16:49:08" itemprop="dateModified" datetime="2019-06-25T16:49:08-07:00">2019-06-25</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/學習/" itemprop="url" rel="index"><span itemprop="name">學習</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">243</span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="今天日期-6月25日"><a href="#今天日期-6月25日" class="headerlink" title="今天日期 (6月25日)"></a>今天日期 (6月25日)</h1><h1 id="讀書進度"><a href="#讀書進度" class="headerlink" title="讀書進度"></a>讀書進度</h1><table>
-<thead>
-<tr>
-<th>書名</th>
-<th>進度</th>
-<th>更新日期</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>IPA</td>
-<td>第13個元音</td>
-<td>2019-06-14</td>
-</tr>
-<tr>
-<td>黑客與畫家</td>
-<td>第二章</td>
-<td>2019-06-25</td>
-</tr>
-<tr>
-<td>So good they can’t ignore you</td>
-<td>Chapter 6</td>
-<td>2019-06-15</td>
-</tr>
-</tbody>
-</table>
-<h1 id="書單"><a href="#書單" class="headerlink" title="書單"></a>書單</h1><table>
-<thead>
-<tr>
-<th>書名</th>
-<th>狀態</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Automate The Boring Stuff With Python</td>
-<td>Done</td>
-</tr>
-</tbody>
-</table>
-<p>最近在學一門MIT的公開課，18.01(Signle Variable Calculus) </p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-	
-
-
-
-    
-
-    
-      
-    
-    
-
-    
-
-
-<div>
-  
-</div>
-	
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/10641/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Daniel Lau">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Daniel's Farmland">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/10641/" class="post-title-link" itemprop="url">兩年計劃</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-25 21:18:08" itemprop="dateCreated datePublished" datetime="2019-06-25T21:18:08-07:00">2019-06-25</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/學習/" itemprop="url" rel="index"><span itemprop="name">學習</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">315</span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>這幾天都在看計算機的東西，也看了一些關於找工作的YouTube videos。特別是看完這些有關找工作的videos後，我心裡產生了強烈的不安和焦慮。現在要在美國找份software engineer的工作，隨隨便便都要經過5、6輪面試。多輪面試意味着，見工者必需具有真才實學，難以蒙混過關。</p>
-<p>既然找工作要真才實學，那我只好在這一段時間內好好去裝備自己。</p>
-<p>由於還有兩年就要畢業了，所以就叫這計劃兩年計劃。</p>
-<p>計劃內容(會更新)：</p>
-<ul>
-<li>每天刷一題leetcode</li>
-<li>一有空就寫一些程序 (什麼叫一有空？什麼叫一些？……我也覺得這說的很不具體，但的確不敢寫具體的)</li>
-<li>學習別人的原碼，做筆記</li>
-</ul>
-<p>希望自己這兩年能堅持的去學習，不要鬆懈。加油！</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-	
-
-
-
-    
-
-    
-      
-    
-    
-
-    
-
-
-<div>
-  
-</div>
-	
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/29092/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Daniel Lau">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Daniel's Farmland">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/29092/" class="post-title-link" itemprop="url">學習方法的反思</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-19 17:33:36 / Modified: 17:33:58" itemprop="dateCreated datePublished" datetime="2019-06-19T17:33:36-07:00">2019-06-19</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/學習/" itemprop="url" rel="index"><span itemprop="name">學習</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">1.5k</span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>最近認識了一個朋友。我在她的blog上看到了一個叫”瞎逼叨”的系列，覺得非常的有趣。現在我也開始學習她去寫一些瞎逼叨的東西，嘻嘻。</p>
-<p>身為一學生，逼叨有關學習的東西，總是比逼叨其他subjects來的簡單。瞎逼叨系列就從”學習”開始吧。</p>
-<p>我學習是帶有一個目標的，我的目標是在計算機的某領域達到大師級的水平。為什麼要成為大師級呢？成為某領域的大牛，其實是有很多好處的，而且會使你更喜歡這個領域，更喜歡你現在所學所做的東西，就像雪球效應一樣。我個人來說，不太同意追求盲目地去自己的passion。有一本書專門是說不要盲目的追求自己的passion，而是專心在一領域中成為大師級的大物。這書是叫so good they can’t ignore you，非常有意思的書，在這安利給大家看喔。你或許會說，追求自己的passion和成為某領域的大牛，兩者之間没有什麼衝突，但作者說這兩者其實是兩個不同的mindset，會在下意識中影響人的行為和心情。雖然這兩個mindset看似差不來，但卻差之毫厘，失之千里。關於這書上的東西，我就不在這詳細說了，有興趣的朋友，歡迎自己去找這本書來看喔。這絶對是一本life changing的書。</p>
-<p>好了，我學習的目標已經確定了，接下來要做的就是去制定一個計劃使我可以達成目標。說到要成為大師的學習方法，這裡有一個著名的定律叫一萬小時定律。這一萬小時定律，簡單粗暴，說只要你在某領域刻意練習一萬個小時，就可以為成大師了。哇，這不就是我想要的結果嗎？現在方法也確定好了，就是採用大量練習的原理，使我達到大師的水平。</p>
-<p>身為一個常常自我懷疑的人，我當然忍不住在google一下這一萬小時定律(以前看過這出處的書，但現在都忘光了，所以又google了一遍)。我在google的結果中發現了一個叫”一萬小時天才法則致命漏洞”的文章。什麼，這居然還有bug？點進去看了一下，這個bug就是不正確的練習。簡單來說，”量”和”質”同等重要，不以為”量”達到了一個小時後，你就能成為大師，這還得看你平時練習的”質”如何。打個比方說，你平時學習是追着劇學的，而且一遇到難的地方就跳過，不去思考。這樣的學習質量，就算是投放了一萬小時，或是二萬小時，也不一定能有專家級的水平。</p>
-<p>一萬個小時很容易量化，學習計時的軟件，隨使搜也是一大堆。要統計自己學習的時數，這還是比較容易的，人自律一點就行。但是這個學習的”質”，的確是比”量”難去量代，總不能去列一大堆的評分標準，然後天天給自己的學習質量打分吧。如果這樣的話，也太痛苦了……</p>
-<p>我現在採取了一個小小的方法來粗糙的衡量自己的學習質量。就是看我在學習時有没有struggling的感覺。我認為如果一個人在學習的過程中，完全没有struggling的感覺(就是感覺到不用腦子就得學習)，那麼是次學習就可以被判定為質量不如理想。為何我會認為有較的學習是該有struggling的感覺呢？我認為學習是一個技能，是一種能力(像是閱讀的速度，記憶的能力，思考的能力等等)，我見也有人把這稱為學習力。如果學習是一種能力的話，那麼就存在着提高能力的方法。任何提高能力的原理都大同小異，無非是超越自己舊有的極限。struggling的感覺，就是在你挑戰自己極限時所產生的感覺。假如你現在在學一樣東西，而你在這學習的過程完全没有感到struggling，那麼我會懷疑你遇到以下這幾種可能的情況。</p>
-<ul>
-<li>你在學你已經會的東西</li>
-<li>你没有突破自己的極限，按着自己的能力去制定合適的學習計劃</li>
-</ul>
-<p>今天的瞎逼叨就到這吧，不逼叨太長了。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-	
-
-
-
-    
-
-    
-      
-    
-    
-
-    
-
-
-<div>
-  
-</div>
-	
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/27181/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Daniel Lau">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Daniel's Farmland">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/27181/" class="post-title-link" itemprop="url">日記 - 061319</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-13 16:20:15 / Modified: 22:57:31" itemprop="dateCreated datePublished" datetime="2019-06-13T16:20:15-07:00">2019-06-13</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/生活點滴/" itemprop="url" rel="index"><span itemprop="name">生活點滴</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">431</span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="申請信用卡"><a href="#申請信用卡" class="headerlink" title="申請信用卡"></a>申請信用卡</h1><p>今天試了去申請兩張信用卡，試了兩個信用卡公司。一個是American Express，另一個是Discovery。American Express的那一個要我提交更多的資料。而Discovery那個就直接批了。 我打算暫時不理American Express的那申請，等以後就去弄吧。</p>
-<img src="/post/27181/photo1.JPG">
-<p>現在這個卡的信用額並不高，只有$1750，可以拿這交一下醫療保險。 申請信用卡的過程比我所想像的更順利，好開心。 以後的學費，就是打算去用信用卡去交的。這麼的話，兩年之後，我就會有一個挻好的credit score了。 </p>
-<p>Credit Score這東西在美國是特別重要的，所以有想以後留美工作或生活的朋友，要多多留意自己的credit。</p>
-<p>忘了提一件事，我這信用卡是朋友refer我的，所以我們倆都可以拿50刀。嘻嘻，挻開心的。</p>
-<h1 id="黑客與畫家"><a href="#黑客與畫家" class="headerlink" title="黑客與畫家"></a>黑客與畫家</h1><p>昨天我發現我的朋友在看這一本書，所以我昨天也跟着去看了。覺得挻好趣的，現在每天都會抽出一點的時間去看這一本書，並做一下筆記。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-	
-
-
-
-    
-
-    
-      
-    
-    
-
-    
-
-
-<div>
-  
-</div>
-	
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/43097/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Daniel Lau">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Daniel's Farmland">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/43097/" class="post-title-link" itemprop="url">IPA - 筆記</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-12 13:33:14" itemprop="dateCreated datePublished" datetime="2019-06-12T13:33:14-07:00">2019-06-12</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-06-14 22:49:01" itemprop="dateModified" datetime="2019-06-14T22:49:01-07:00">2019-06-14</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/學習/" itemprop="url" rel="index"><span itemprop="name">學習</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">1k</span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>IPA指的是International Phonetic Alphabet，也就是國際音標。學這的原因：改善英語發音，讓自已可以更加準確的表達。</p>
-<h1 id="元音"><a href="#元音" class="headerlink" title="元音"></a>元音</h1><p>英語共有24個元音。元音與輔音的分別是，元音是要振動聲帶的。</p>
-<h2 id="1-i-單元音"><a href="#1-i-單元音" class="headerlink" title="1. [i]單元音"></a>1. [i]單元音</h2><img src="/post/43097/photo1.JPG">
-<p>發音特點：</p>
-<ul>
-<li>長音</li>
-<li>發音類似”衣”</li>
-</ul>
-<p>單詞：</p>
-<ul>
-<li>eat</li>
-<li>need </li>
-<li>thief</li>
-<li>heat </li>
-<li>sheep</li>
-</ul>
-<h2 id="2-I-單元音"><a href="#2-I-單元音" class="headerlink" title="2. [I]單元音"></a>2. [I]單元音</h2><img src="/post/43097/photo2.JPG">
-<p>發音特點：</p>
-<ul>
-<li>短音</li>
-<li>嘴張的比發[i]的開</li>
-</ul>
-<p>單詞：</p>
-<ul>
-<li>sit</li>
-<li>fit</li>
-<li>give</li>
-<li>six</li>
-<li>pig</li>
-</ul>
-<h2 id="3-e-雙元音"><a href="#3-e-雙元音" class="headerlink" title="3. [e]雙元音"></a>3. [e]雙元音</h2><img src="/post/43097/photo3.JPG">
-<p>發音特點：</p>
-<ul>
-<li>先發[ɛ]，再發[I]，中問不停頓</li>
-</ul>
-<p>單詞：</p>
-<ul>
-<li>lake</li>
-<li>make</li>
-<li>later</li>
-<li>plane</li>
-<li>main</li>
-<li>train</li>
-<li>saint</li>
-</ul>
-<h2 id="4-e-單元音"><a href="#4-e-單元音" class="headerlink" title="4. [ɛ]單元音"></a>4. [ɛ]單元音</h2><img src="/post/43097/photo4.JPG">
-<p>發音特點：</p>
-<ul>
-<li>嘴巴比發[I]更開</li>
-<li>舌平放，抵住下齒</li>
-</ul>
-<p>單詞：</p>
-<ul>
-<li>bed</li>
-<li>let</li>
-<li>pen</li>
-<li>set</li>
-<li>sex</li>
-<li>beg</li>
-</ul>
-<h2 id="5-ae-雙元音"><a href="#5-ae-雙元音" class="headerlink" title="5. [æ]雙元音"></a>5. [æ]雙元音</h2><img src="/post/43097/photo5.JPG">
-<p>發音特點：</p>
-<ul>
-<li>嘴張大</li>
-<li>下巴盡量住下拉</li>
-<li>和平放，抵住下齒</li>
-</ul>
-<p>單詞：</p>
-<ul>
-<li>bad</li>
-<li>dad</li>
-<li>matter</li>
-<li>bag</li>
-<li>land</li>
-<li>black</li>
-<li>cap</li>
-<li>ax</li>
-</ul>
-<h2 id="6-ɑ-單元音"><a href="#6-ɑ-單元音" class="headerlink" title="6. [ɑ]單元音"></a>6. [ɑ]單元音</h2><img src="/post/43097/photo6.JPG">
-<p>發音特點：</p>
-<ul>
-<li>發音像是”啊”</li>
-<li>嘴巴張開，像個大圓圈</li>
-<li>舌平放，舌尖不抵下齒</li>
-</ul>
-<p>單詞：</p>
-<ul>
-<li>lock</li>
-<li>hot </li>
-<li>stop</li>
-<li>block</li>
-<li>cop</li>
-<li>ox</li>
-</ul>
-<h2 id="7-ar-雙元音"><a href="#7-ar-雙元音" class="headerlink" title="7. [ar]雙元音"></a>7. [ar]雙元音</h2><img src="/post/43097/photo7.JPG">
-<p>發音特點：</p>
-<ul>
-<li>發[a]時嘴巴不全開，因後面要發[r]</li>
-<li>[r]要卷舌</li>
-</ul>
-<p>單詞：</p>
-<ul>
-<li>hard</li>
-<li>artist</li>
-<li>far</li>
-<li>car</li>
-<li>park</li>
-<li>Mars</li>
-</ul>
-<h2 id="8-o-單元音"><a href="#8-o-單元音" class="headerlink" title="8. [ɔ]單元音"></a>8. [ɔ]單元音</h2><img src="/post/43097/photo8.JPG">
-<p>發音特點：</p>
-<ul>
-<li>發音像公雞的”喔”</li>
-</ul>
-<p>單詞：</p>
-<ul>
-<li>law</li>
-<li>saw</li>
-<li>hall</li>
-<li>saw</li>
-<li>tall</li>
-</ul>
-<h2 id="9-or-雙元音"><a href="#9-or-雙元音" class="headerlink" title="9. [ɔr]雙元音"></a>9. [ɔr]雙元音</h2><img src="/post/43097/photo9.JPG">
-<p>發音特點：</p>
-<ul>
-<li>先發[ɔ]，後發[r]</li>
-</ul>
-<p>單詞：</p>
-<ul>
-<li>born</li>
-<li>for</li>
-<li>warning</li>
-</ul>
-<h2 id="10-oɪ-雙元音"><a href="#10-oɪ-雙元音" class="headerlink" title="10. [ɔɪ]雙元音"></a>10. [ɔɪ]雙元音</h2><img src="/post/43097/photo10.JPG">
-<p>發音特點：</p>
-<ul>
-<li>像是”喔”及”衣”連在一起</li>
-<li>常出現在有”oi”和”oy”的字</li>
-</ul>
-<p>單詞：</p>
-<ul>
-<li>coin</li>
-<li>noise </li>
-<li>point</li>
-<li>boy</li>
-<li>joy</li>
-<li>oyster</li>
-<li>toy</li>
-</ul>
-<h2 id="11-o-雙元音"><a href="#11-o-雙元音" class="headerlink" title="11. [o]雙元音"></a>11. [o]雙元音</h2><img src="/post/43097/photo11.JPG">
-<p>發音特點：</p>
-<ul>
-<li>先發[ə]，後發[ʊ]</li>
-<li>像是中文的”歐”</li>
-</ul>
-<p>單詞：</p>
-<ul>
-<li>coat </li>
-<li>soap</li>
-<li>open</li>
-<li>bowl</li>
-<li>coal </li>
-</ul>
-<h2 id="12-u-單元音"><a href="#12-u-單元音" class="headerlink" title="12. [u]單元音"></a>12. [u]單元音</h2><img src="/post/43097/photo12.JPG">
-<p>發音特點：</p>
-<ul>
-<li>上下唇微微噘起</li>
-<li>像是中文的”烏”</li>
-</ul>
-<p>單詞：</p>
-<ul>
-<li>too</li>
-<li>mood</li>
-<li>food</li>
-<li>soon</li>
-<li>do</li>
-<li>cool </li>
-<li>fool</li>
-</ul>
-<h2 id="13-ʊ-單元音"><a href="#13-ʊ-單元音" class="headerlink" title="13. [ʊ]單元音"></a>13. [ʊ]單元音</h2><img src="/post/43097/photo13.JPG">
-<p>發音特點：</p>
-<ul>
-<li>嘴形壓扁</li>
-<li>像是中文的”餓”</li>
-</ul>
-<p>單詞：</p>
-<ul>
-<li>book</li>
-<li>good</li>
-<li>would</li>
-<li>foot</li>
-<li>full</li>
-<li>pull</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-	
-
-
-
-    
-
-    
-      
-    
-    
-
-    
-
-
-<div>
-  
-</div>
-	
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/43644/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Daniel Lau">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Daniel's Farmland">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/43644/" class="post-title-link" itemprop="url">日記 - 061219</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-12 13:19:26 / Modified: 13:31:58" itemprop="dateCreated datePublished" datetime="2019-06-12T13:19:26-07:00">2019-06-12</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/生活點滴/" itemprop="url" rel="index"><span itemprop="name">生活點滴</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">275</span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>今天是星期三，所以今天早上去了剪草。每週三都要去剪草和倒垃圾。</p>
-<p>剛剛order完我的transcript，應該可以在7月頭前送到Davis吧。</p>
-<p>昨天要訂的貨，被其他人搶了。自己不知道是否要繼續去做FBA，還是改去做drop shipping。今天要抽一點的時間去研究drop shipping。</p>
-<p>很想要Macbook Pro啊，哈哈，真的很美。希望下一年能買一個。</p>
-<h1 id="Todo-list"><a href="#Todo-list" class="headerlink" title="Todo list"></a>Todo list</h1><ul>
-<li>剪草、倒垃圾</li>
-<li>order transcript</li>
-<li>leetcode </li>
-<li>IPA</li>
-<li>學一下python</li>
-<li>看一會so good they can’t ignore you</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-	
-
-
-
-    
-
-    
-      
-    
-    
-
-    
-
-
-<div>
-  
-</div>
-	
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/44240/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Daniel Lau">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Daniel's Farmland">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/44240/" class="post-title-link" itemprop="url">日記 - 061119</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-11 22:45:01" itemprop="dateCreated datePublished" datetime="2019-06-11T22:45:01-07:00">2019-06-11</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-06-12 13:20:00" itemprop="dateModified" datetime="2019-06-12T13:20:00-07:00">2019-06-12</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/生活點滴/" itemprop="url" rel="index"><span itemprop="name">生活點滴</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">334</span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>嘻嘻，歡迎川川！</p>
-<p>有一個多月没有更新了。5月底時已經考完試了。本想着考完試後會閒下來，但實際上卻是相反。最近在弄Amazon上弄FBA的東西，算上這個summer的一個小小的project，希望可以學到東西之餘，還可以賺到一些的錢。希望明天可以找到一個比較好的product。</p>
-<p>還有兩年的才畢業，還有兩年的學費要交。這兩年的學費可以提升很多的credit，我朋友現在的credit都到720左右了。本來我是想着要用debit card的，因為錢將會在debit card裡，没想過要申請credit card去交學費。很開心，知道了這個。我以前剛好在學校打過工，所以有工卡，可以申請到credit card。明天去申請去，嘻嘻。</p>
-<p>哇，好累啊，不想寫了哈哈。明天再寫。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-	
-
-
-
-    
-
-    
-      
-    
-    
-
-    
-
-
-<div>
-  
-</div>
-	
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/11781/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Daniel Lau">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Daniel's Farmland">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/11781/" class="post-title-link" itemprop="url">日記 - 042219</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-22 11:38:19" itemprop="dateCreated datePublished" datetime="2019-04-22T11:38:19-07:00">2019-04-22</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-25 22:35:38" itemprop="dateModified" datetime="2019-04-25T22:35:38-07:00">2019-04-25</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/生活點滴/" itemprop="url" rel="index"><span itemprop="name">生活點滴</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">632</span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>今天發現了一個叫timing的app，這是一個供多一起學習的app。具體有什麼的功能，我暫時也不太清楚。但其實有一個能功是，可以快拍自己學習的視頻。今天打算試試去玩一下這。</p>
-<p>另外，今天還了一個手工藝品(能吃的)。下個月是我舅媽外甥的生日，所以她想為他親自做一個生日蛋糕。這個生日蛋糕是以鯊魚為主題的。一會我會放一些照片在這。<br><img src="/post/11781/photo1.jpg"><br><img src="/post/11781/photo2.jpg"><br><img src="/post/11781/photo3.jpg"></p>
-<h1 id="今日句子"><a href="#今日句子" class="headerlink" title="今日句子"></a>今日句子</h1><p>When someone says, I want a programming language in which I need only say what I wish done, give him a lollipop. -Alan Perlis</p>
-<p>The “real meat” of history is ideas and ideals that have proved their worth in practical use.</p>
-<p>The ultimate aim of pragramming is always to produce useful systems.</p>
-<p>we cannot not have all of the good properties because several of the properties are mutually exclusive.</p>
-<h1 id="今日英語單詞"><a href="#今日英語單詞" class="headerlink" title="今日英語單詞"></a>今日英語單詞</h1><ul>
-<li>bunk (N-count) 鋪位  History is a bunk. 95% of everthing is bunk.</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-	
-
-
-
-    
-
-    
-      
-    
-    
-
-    
-
-
-<div>
-  
-</div>
-	
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/18879/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Daniel Lau">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Daniel's Farmland">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/18879/" class="post-title-link" itemprop="url">日記 - 042119</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-21 12:12:33" itemprop="dateCreated datePublished" datetime="2019-04-21T12:12:33-07:00">2019-04-21</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-22 11:37:36" itemprop="dateModified" datetime="2019-04-22T11:37:36-07:00">2019-04-22</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/生活點滴/" itemprop="url" rel="index"><span itemprop="name">生活點滴</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">94</span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <img src="/post/18879/photo1.jpg">
-<p>這是午餐吃的沙拉。</p>
-<h1 id="知識爆炸的時代"><a href="#知識爆炸的時代" class="headerlink" title="知識爆炸的時代"></a>知識爆炸的時代</h1><p>自從有了計算機和網絡後，我們就步入了知識爆炸的時代了。 讀書讀的快，固然是件好事。但我認為我們得學會去過濾不重要的信息。</p>
-<p>哈哈，今天没想到要寫些什麼。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-	
-
-
-
-    
-
-    
-      
-    
-    
-
-    
-
-
-<div>
-  
-</div>
-	
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/62046/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Daniel Lau">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Daniel's Farmland">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/62046/" class="post-title-link" itemprop="url">收到大學的通知</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-20 21:59:32" itemprop="dateCreated datePublished" datetime="2019-04-20T21:59:32-07:00">2019-04-20</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-21 11:42:41" itemprop="dateModified" datetime="2019-04-21T11:42:41-07:00">2019-04-21</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/生活點滴/" itemprop="url" rel="index"><span itemprop="name">生活點滴</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">133</span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <img src="/post/62046/photo1.PNG">
-<p>昨天下午我準備去洗澡時，收到這個通知書。很好心，很期待在這可以學到很多的知識。我身邊與我同年齡的朋友都基本上畢業了一年了，而我卻還有兩年要去讀。我會好好珍惜這一個機會，以前我是被逼着要去讀書，而這次是我主動要去讀的。我知道我為什麼讀，我有清晰的目標和足夠的動力。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-	
-
-
-
-    
-
-    
-      
-    
-    
-
-    
-
-
-<div>
-  
-</div>
-	
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Daniel Lau">
-            
-              <p class="site-author-name" itemprop="name">Daniel Lau</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">23</span>
-                    <span class="site-state-item-name">posts</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">categories</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">9</span>
-                    <span class="site-state-item-name">tags</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
-          
-
-          
-            <div class="links-of-author motion-element">
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://github.com/Daniellau331" title="GitHub &rarr; https://github.com/Daniellau331" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
-            </div>
-          
-
-          
-
-          
-          
-            <div class="links-of-blogroll motion-element links-of-blogroll-block">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-link"></i>
-                Useful Links
-              </div>
-              <ul class="links-of-blogroll-list">
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="http://www.yahoo.com" title="http://www.yahoo.com" rel="noopener" target="_blank">Title</a>
-                  </li>
-                
-              </ul>
-            </div>
-          
-
-          
-            
-          
-          
-
-        </div>
-      </div>
-
-      
-
-      
-        <div class="back-to-top">
-          <i class="fa fa-arrow-up"></i>
-          
-            <span id="scrollpercent"><span>0</span>%</span>
-          
-        </div>
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Daniel Lau</span>
-
-  
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    
-      <span class="post-meta-item-text">Symbols count total: </span>
-    
-    <span title="Symbols count total">15k</span>
-  
-
-  
-</div>
-
-
-
-
-
-
-
-
-
-
-<!-- 
-
-<div class="theme-info">
-
-  <div class="powered-by"></div>
-
-  <span class="post-count">Total Word Count: 6.2k</span>
-
-
--->
-
-
-        
-
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-
-    
-
-    
-
-    
-  </div>
-
-  
-
-<script>
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
+        <script>
+ 
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
   }
-</script>
+  console.log("userAgent:" + browser.versions.userAgent);
 
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in');
+      }
+    }
+  }
 
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
 
+  function asyncErr(){
+    console.warn('script load from CDN failed, will load local script')
+  }
 
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
 
+  var asyncLoadWithFallBack = function(arr, success, reject) {
+      var currReject = function(){
+        reject()
+        arr.shift()
+        if(arr.length)
+          async(arr[0], success, currReject)
+        }
 
+      async(arr[0], success, currReject)
+  }
 
-
-
-
-
-
-  
-
-
-
-  
+  asyncLoadWithFallBack([
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
+    "/lib/webfontloader.min.js"
+  ], asyncCb, asyncErr)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main index-page">
     
-      
-  
-  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  
-    <script src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script src="/lib/reading_progress/reading_progress.js"></script>
-  
-
-
-  
-
-
-  <script src="/js/src/utils.js?v=6.6.0"></script>
-
-  <script src="/js/src/motion.js?v=6.6.0"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/src/affix.js?v=6.6.0"></script>
-
-  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
-
-
-
-  
-
-  
-
-
-  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  <style>
-    .copy-btn {
-      display: inline-block;
-      padding: 6px 12px;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 20px;
-      color: #333;
-      white-space: nowrap;
-      vertical-align: middle;
-      cursor: pointer;
-      background-color: #eee;
-      background-image: linear-gradient(#fcfcfc, #eee);
-      border: 1px solid #d5d5d5;
-      border-radius: 3px;
-      user-select: none;
-      outline: 0;
-    }
-
-    .highlight-wrap .copy-btn {
-      transition: opacity .3s ease-in-out;
-      opacity: 0;
-      padding: 2px 6px;
-      position: absolute;
-      right: 4px;
-      top: 8px;
-    }
-
-    .highlight-wrap:hover .copy-btn,
-    .highlight-wrap .copy-btn:focus {
-      opacity: 1
-    }
-
-    .highlight-wrap {
-      position: relative;
-    }
-  </style>
-  <script>
-    $('.highlight').each(function (i, e) {
-      var $wrap = $('<div>').addClass('highlight-wrap');
-      $(e).after($wrap);
-      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
-        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
-          return $(e).text();
-        }).toArray().join('\n');
-        var ta = document.createElement('textarea');
-        var range = document.createRange(); //For Chrome
-        var sel = window.getSelection(); //For Chrome
-        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
-        ta.style.top = yPosition + 'px'; //Prevent page scroll
-        ta.style.position = 'absolute';
-        ta.style.opacity = '0';
-        ta.value = code;
-        ta.textContent = code; //For FireFox
-        ta.contentEditable = true;
-        ta.readOnly = false;
-        document.body.appendChild(ta);
-        range.selectNode(ta);
-        sel.removeAllRanges();
-        sel.addRange(range);
-        ta.setSelectionRange(0, code.length);
-        var result = document.execCommand('copy');
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/post/4103/">
+            
+                <span class="stick-top iconfont-archer">&#xe63d;</span>
+                
+                <span>置頂</span>
+        </a>
+        <div class="abstract-content">
+            今天日期 (6月25日)讀書進度
+
+
+書名
+進度
+更新日期
+
+
+
+
+IPA
+第13個元音
+2019-06-14
+
+
+黑客與畫家
+第二章
+2019-06-25
+
+
+So good they can’t ignore you
+Chapter 6
+2019-06-15
+
+
+
+書單
+
+
+書名
+狀態
+
+
+
+
+Automate The Boring Stuff With Python
+Done
+
+
+
+最近在學一門MIT的公開課，18.01(Signle Variable Calculus) 
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/15</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/post/10641/">
+            
+                <span>兩年計劃</span>
+        </a>
+        <div class="abstract-content">
+            這幾天都在看計算機的東西，也看了一些關於找工作的YouTube videos。特別是看完這些有關找工作的videos後，我心裡產生了強烈的不安和焦慮。現在要在美國找份software engineer的工作，隨隨便便都要經過5、6輪面試。多輪面試意味着，見工者必需具有真才實學，難以蒙混過關。
+既然找工作要真才實學，那我只好在這一段時間內好好去裝備自己。
+由於還有兩年就要畢業了，所以就叫這計劃兩年計劃。
+計劃內容(會更新)：
+
+每天刷一題leetcode
+一有空就寫一些程序 (什麼叫一有空？什麼叫一些？……我也覺得這說的很不具體，但的確不敢寫具體的)
+學習別人的原碼，做筆記
+
+希望自己這兩...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/06/25</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="計劃">計劃</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/post/29092/">
+            
+                <span>學習方法的反思</span>
+        </a>
+        <div class="abstract-content">
+            最近認識了一個朋友。我在她的blog上看到了一個叫”瞎逼叨”的系列，覺得非常的有趣。現在我也開始學習她去寫一些瞎逼叨的東西，嘻嘻。
+身為一學生，逼叨有關學習的東西，總是比逼叨其他subjects來的簡單。瞎逼叨系列就從”學習”開始吧。
+我學習是帶有一個目標的，我的目標是在計算機的某領域達到大師級的水平。為什麼要成為大師級呢？成為某領域的大牛，其實是有很多好處的，而且會使你更喜歡這個領域，更喜歡你現在所學所做的東西，就像雪球效應一樣。我個人來說，不太同意追求盲目地去自己的passion。有一本書專門是說不要盲目的追求自己的passion，而是專心在一領域中成為大師級的大物。這書是叫so g...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/06/19</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="瞎逼叨">瞎逼叨</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/post/27181/">
+            
+                <span>日記 - 061319</span>
+        </a>
+        <div class="abstract-content">
+            申請信用卡今天試了去申請兩張信用卡，試了兩個信用卡公司。一個是American Express，另一個是Discovery。American Express的那一個要我提交更多的資料。而Discovery那個就直接批了。 我打算暫時不理American Express的那申請，等以後就去弄吧。
+
+現在這個卡的信用額並不高，只有$1750，可以拿這交一下醫療保險。 申請信用卡的過程比我所想像的更順利，好開心。 以後的學費，就是打算去用信用卡去交的。這麼的話，兩年之後，我就會有一個挻好的credit score了。 
+Credit Score這東西在美國是特別重要的，所以有想以後留美工作或生...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/06/13</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/post/43097/">
+            
+                <span>IPA - 筆記</span>
+        </a>
+        <div class="abstract-content">
+            前言IPA指的是International Phonetic Alphabet，也就是國際音標。學這的原因：改善英語發音，讓自已可以更加準確的表達。
+元音英語共有24個元音。元音與輔音的分別是，元音是要振動聲帶的。
+1. [i]單元音
+發音特點：
+
+長音
+發音類似”衣”
+
+單詞：
+
+eat
+need 
+thief
+heat 
+sheep
+
+2. [I]單元音
+發音特點：
+
+短音
+嘴張的比發[i]的開
+
+單詞：
+
+sit
+fit
+give
+six
+pig
+
+3. [e]雙元音
+發音特點：
+
+先發[ɛ]，再發[I]，中問不停頓
+
+單詞：
+
+lake
+make
+later
+plane
+main...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/06/12</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="IPA">IPA</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/post/43644/">
+            
+                <span>日記 - 061219</span>
+        </a>
+        <div class="abstract-content">
+            今天是星期三，所以今天早上去了剪草。每週三都要去剪草和倒垃圾。
+剛剛order完我的transcript，應該可以在7月頭前送到Davis吧。
+昨天要訂的貨，被其他人搶了。自己不知道是否要繼續去做FBA，還是改去做drop shipping。今天要抽一點的時間去研究drop shipping。
+很想要Macbook Pro啊，哈哈，真的很美。希望下一年能買一個。
+Todo list
+剪草、倒垃圾
+order transcript
+leetcode 
+IPA
+學一下python
+看一會so good they can’t ignore you
+
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/06/12</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/post/44240/">
+            
+                <span>日記 - 061119</span>
+        </a>
+        <div class="abstract-content">
+            嘻嘻，歡迎川川！
+有一個多月没有更新了。5月底時已經考完試了。本想着考完試後會閒下來，但實際上卻是相反。最近在弄Amazon上弄FBA的東西，算上這個summer的一個小小的project，希望可以學到東西之餘，還可以賺到一些的錢。希望明天可以找到一個比較好的product。
+還有兩年的才畢業，還有兩年的學費要交。這兩年的學費可以提升很多的credit，我朋友現在的credit都到720左右了。本來我是想着要用debit card的，因為錢將會在debit card裡，没想過要申請credit card去交學費。很開心，知道了這個。我以前剛好在學校打過工，所以有工卡，可以申請到credi...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/06/11</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/post/11781/">
+            
+                <span>日記 - 042219</span>
+        </a>
+        <div class="abstract-content">
+            今天發現了一個叫timing的app，這是一個供多一起學習的app。具體有什麼的功能，我暫時也不太清楚。但其實有一個能功是，可以快拍自己學習的視頻。今天打算試試去玩一下這。
+另外，今天還了一個手工藝品(能吃的)。下個月是我舅媽外甥的生日，所以她想為他親自做一個生日蛋糕。這個生日蛋糕是以鯊魚為主題的。一會我會放一些照片在這。
+今日句子When someone says, I want a programming language in which I need only say what I wish done, give him a lollipop. -Alan Perlis
+The ...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/22</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="日記">日記</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/post/18879/">
+            
+                <span>日記 - 042119</span>
+        </a>
+        <div class="abstract-content">
+            
+這是午餐吃的沙拉。
+知識爆炸的時代自從有了計算機和網絡後，我們就步入了知識爆炸的時代了。 讀書讀的快，固然是件好事。但我認為我們得學會去過濾不重要的信息。
+哈哈，今天没想到要寫些什麼。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/21</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="日記">日記</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/post/62046/">
+            
+                <span>收到大學的通知</span>
+        </a>
+        <div class="abstract-content">
+            
+昨天下午我準備去洗澡時，收到這個通知書。很好心，很期待在這可以學到很多的知識。我身邊與我同年齡的朋友都基本上畢業了一年了，而我卻還有兩年要去讀。我會好好珍惜這一個機會，以前我是被逼着要去讀書，而這次是我主動要去讀的。我知道我為什麼讀，我有清晰的目標和足夠的動力。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/20</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    <!-- paginator  -->
+    
+    <nav class="page-nav">
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">NEXT &#62;</a>
+    </nav>
+    
+</main>
+            <!-- profile -->
+            
+            <div class="profile">
+    <img class="profile-avatar" alt="avatar" src="/avatar/Misaka.jpg">
+    <div class="profile-name">fi3ework</div>
+    
+    <div class="profile-signature">
+        witness me
+    </div>
+    
+    
+    <div class="profile-social">
         
-        ta.blur(); //For iOS
-        $(this).blur();
-      })).on('mouseleave', function (e) {
-        var $b = $(this).find('.copy-btn');
-        setTimeout(function () {
-          $b.text('Copy');
-        }, 300);
-      }).append(e);
-    })
-  </script>
+    
+        
+            
+                <a href="mailto:12345@qq.com" class="iconfont-archer email" title="email"></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/fi3ework" class="iconfont-archer github" target="_blank" title="github"></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title="wechat">
+                  
+                  <img class="profile-qr" src="/assets/example_qr.png">
+                </span>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
 
+    </div>
+    
+    
+        <div class="friends">
+            <div>FRIENDS</div>
+            
+                
+                    <span>
+                        <a href="//www.baidu.com" target="_black">friendA</a>
+                    </span>
+                
+            
+                
+                    <span>
+                        <a href="//www.google.com" target="_black">friendB</a>
+                    </span>
+                
+            
+                
+            
+        </div>
+    
+    
+        <div class="about-me">
+            <a href="/about">ABOUT ME</a>
+        </div>
+    
+</div>
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:12345@qq.com" class="iconfont-archer email" title="email"></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/fi3ework" class="iconfont-archer github" target="_blank" title="github"></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title="wechat">
+                  
+                  <img class="profile-qr" src="/assets/example_qr.png">
+                </span>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
 
-  
-
-</body>
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+    <div class="busuanzi-container">
+    
+     
+    <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span> :)</span>
+    
+    </div>
+    
+</footer>
+    </div>
+    <!-- toc -->
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 23
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2019 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/25</span><a class="archive-post-title" href="/post/10641/">兩年計劃</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/19</span><a class="archive-post-title" href="/post/29092/">學習方法的反思</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/13</span><a class="archive-post-title" href="/post/27181/">日記 - 061319</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/12</span><a class="archive-post-title" href="/post/43644/">日記 - 061219</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/12</span><a class="archive-post-title" href="/post/43097/">IPA - 筆記</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/11</span><a class="archive-post-title" href="/post/44240/">日記 - 061119</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/22</span><a class="archive-post-title" href="/post/11781/">日記 - 042219</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/21</span><a class="archive-post-title" href="/post/18879/">日記 - 042119</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/20</span><a class="archive-post-title" href="/post/62046/">收到大學的通知</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/19</span><a class="archive-post-title" href="/post/15662/">要開始Van Life？</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/17</span><a class="archive-post-title" href="/post/63041/">她還好嗎？</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/16</span><a class="archive-post-title" href="/post/21374/">今天我煮飯，哈</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/15</span><a class="archive-post-title" href="/post/4103/">置頂</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/15</span><a class="archive-post-title" href="/post/7944/">2019年的目標與計劃(上半年)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/15</span><a class="archive-post-title" href="/post/26965/">Binary Tree筆記</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/15</span><a class="archive-post-title" href="/post/28294/">節約用水的良方</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/15</span><a class="archive-post-title" href="/post/28114/">反思-有關於blog和oneNote</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/15</span><a class="archive-post-title" href="/post/37442/">Hexo Blog的useful Links</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/15</span><a class="archive-post-title" href="/post/55058/">雪球速讀法(非讀後感)......</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/15</span><a class="archive-post-title" href="/post/36504/">我會在這Blog上寫些什麼？</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2018 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/29</span><a class="archive-post-title" href="/post/64433/">Four Essential Features of Object-Oriented Programming (Unfinished)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/28</span><a class="archive-post-title" href="/post/32135/">Reference or Pointer in Object-Oriented Programming (Unfinished)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/27</span><a class="archive-post-title" href="/post/47652/">Common Markdown Syntax</a>
+        </li>
+    
+    </ul></div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="計劃"><span class="iconfont-archer">&#xe606;</span>計劃</span>
+    
+        <span class="sidebar-tag-name" data-tags="瞎逼叨"><span class="iconfont-archer">&#xe606;</span>瞎逼叨</span>
+    
+        <span class="sidebar-tag-name" data-tags="blog"><span class="iconfont-archer">&#xe606;</span>blog</span>
+    
+        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
+    
+        <span class="sidebar-tag-name" data-tags="oneNote"><span class="iconfont-archer">&#xe606;</span>oneNote</span>
+    
+        <span class="sidebar-tag-name" data-tags="data structure"><span class="iconfont-archer">&#xe606;</span>data structure</span>
+    
+        <span class="sidebar-tag-name" data-tags="tree"><span class="iconfont-archer">&#xe606;</span>tree</span>
+    
+        <span class="sidebar-tag-name" data-tags="日記"><span class="iconfont-archer">&#xe606;</span>日記</span>
+    
+        <span class="sidebar-tag-name" data-tags="IPA"><span class="iconfont-archer">&#xe606;</span>IPA</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br>
+    1、请确保node版本大于6.2<br>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="學習"><span class="iconfont-archer">&#xe60a;</span>學習</span>
+    
+        <span class="sidebar-category-name" data-categories="生活點滴"><span class="iconfont-archer">&#xe60a;</span>生活點滴</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: "/",
+        author: "Daniel Lau"
+    }
+</script>
+    <!-- CDN failover -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ === 'undefined')
+        {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js">\x3C/script>')
+        }
+    </script>
+    <script src="/scripts/main.js"></script>
+    <!-- algolia -->
+    
+    <!-- busuanzi  -->
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+     
+    </body>
 </html>
+
+
