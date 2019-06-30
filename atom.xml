@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-30T00:20:06.843Z</updated>
+  <updated>2019-06-30T00:21:03.563Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com//post/33835/"/>
     <id>http://yoursite.com//post/33835/</id>
     <published>2019-06-30T00:15:54.000Z</published>
-    <updated>2019-06-30T00:20:06.843Z</updated>
+    <updated>2019-06-30T00:21:03.563Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Q-The-slope-of-the-graph-of-f-x-x-changes-abruptly-when-x-0-Does-this-function-have-a-derivative-If-so-what-is-it-If-not-why-not"><a href="#Q-The-slope-of-the-graph-of-f-x-x-changes-abruptly-when-x-0-Does-this-function-have-a-derivative-If-so-what-is-it-If-not-why-not" class="headerlink" title="Q: The slope of the graph of f(x) = |x| changes abruptly when x = 0. Does this function have a derivative? If so, what is it? If not, why not?"></a>Q: The slope of the graph of f(x) = |x| changes abruptly when x = 0. Does this function have a derivative? If so, what is it? If not, why not?</h1><img src="/post/33835/photo1.PNG">]]></content>
     
@@ -34,6 +34,8 @@
     
     </summary>
     
+    
+      <category term="Single Variable Calculus" scheme="http://yoursite.com/tags/Single-Variable-Calculus/"/>
     
   </entry>
   
