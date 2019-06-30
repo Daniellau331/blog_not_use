@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-29T23:59:40.914Z</updated>
+  <updated>2019-06-29T23:59:58.843Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Single Variable Calculus - Definition and Basic Rules</title>
+    <title>Single Variable Calculus - Definition and Basic Rules (1)</title>
     <link href="http://yoursite.com//post/36967/"/>
     <id>http://yoursite.com//post/36967/</id>
     <published>2019-06-29T07:44:29.000Z</published>
-    <updated>2019-06-29T23:59:40.914Z</updated>
+    <updated>2019-06-29T23:59:58.843Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Introduction-to-Derivatives"><a href="#Introduction-to-Derivatives" class="headerlink" title="Introduction to Derivatives"></a>Introduction to Derivatives</h1><p>Definition: The derivative of f at x0 is the slope of the tangent line<br>to y = f(x) at the point P = (x0, f(x0).</p><h2 id="Geometric-Interpretation-of-Differentiation"><a href="#Geometric-Interpretation-of-Differentiation" class="headerlink" title="Geometric Interpretation of Differentiation"></a>Geometric Interpretation of Differentiation</h2><img src="/post/36967/photo1.PNG"><h3 id="What-is-a-tangent-line"><a href="#What-is-a-tangent-line" class="headerlink" title="What is a tangent line?"></a>What is a tangent line?</h3><p>It is the limit of the secant lines joining points P = (x0, f(x0)) and Q on<br>the graph of f(x) as Q approaches P.</p><h3 id="What-is-a-secant-line"><a href="#What-is-a-secant-line" class="headerlink" title="What is a secant line?"></a>What is a secant line?</h3><p>A secaant line is a line that joins two points on a curve.</p><h2 id="Main-Formula"><a href="#Main-Formula" class="headerlink" title="Main Formula"></a>Main Formula</h2><img src="/post/36967/photo2.PNG"><h1 id="Examples-of-Derivatives"><a href="#Examples-of-Derivatives" class="headerlink" title="Examples of Derivatives"></a>Examples of Derivatives</h1><h2 id="Example-1-y-1-x"><a href="#Example-1-y-1-x" class="headerlink" title="Example 1: y=1/x"></a>Example 1: y=1/x</h2><img src="/post/36967/photo3.PNG"><h2 id="Harder-Problem-Triangles-Under-the-Graph-y-1-x"><a href="#Harder-Problem-Triangles-Under-the-Graph-y-1-x" class="headerlink" title="Harder Problem: Triangles Under the Graph y=1/x"></a>Harder Problem: Triangles Under the Graph y=1/x</h2><img src="/post/36967/photo4.PNG"><img src="/post/36967/photo5.PNG"><h2 id="Notaion-for-Derivatives"><a href="#Notaion-for-Derivatives" class="headerlink" title="Notaion for Derivatives"></a>Notaion for Derivatives</h2><img src="/post/36967/photo6.PNG"><h2 id="Example-2-y-xn"><a href="#Example-2-y-xn" class="headerlink" title="Example 2: y=xn"></a>Example 2: y=xn</h2><img src="/post/36967/photo7.PNG">]]></content>
     
@@ -40,11 +40,11 @@
   </entry>
   
   <entry>
-    <title>Single Variable Calculus - 介紹 (1)</title>
+    <title>Single Variable Calculus - Intro (1)</title>
     <link href="http://yoursite.com//post/33193/"/>
     <id>http://yoursite.com//post/33193/</id>
     <published>2019-06-29T05:26:31.000Z</published>
-    <updated>2019-06-29T07:52:07.298Z</updated>
+    <updated>2019-06-30T00:00:03.589Z</updated>
     
     <content type="html"><![CDATA[<h1 id="這是什麼？"><a href="#這是什麼？" class="headerlink" title="這是什麼？"></a>這是什麼？</h1><p>這是一門MIT的公開課，是Calculus的第一門課。這是免費的，而是人人都可以去學。<br>以下是個公開課的Link，有興趣的朋友可以去看看。<br>link for the course: <a href="https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/index.htm" target="_blank" rel="noopener">Single Variable Calculus</a></p><h1 id="為什麼這個？"><a href="#為什麼這個？" class="headerlink" title="為什麼這個？"></a>為什麼這個？</h1><p>大學叫這門課Cal 1，我其實早在幾年前就已經在大學裡修過這門課了，但具體內容早就忘光了。幾天前認識了一個在早稻田大學的計算機博士，他是研究AI的。有幸跟他聊了一下關於AI的東西，知道了研究AI需要頗為紮實的數學根基。所以我就打算在這個假期去重新學一下數學。</p><h1 id="Big-picture-of-this-course"><a href="#Big-picture-of-this-course" class="headerlink" title="Big picture of this course"></a>Big picture of this course</h1><p>這門課分為五個部分。見下圖。<br><img src="/post/33193/photo1.PNG"></p><h1 id="目錄"><a href="#目錄" class="headerlink" title="目錄"></a>目錄</h1><p><a href="/post/36967">Single Variable Calculus - Definition and Basic Rules</a></p>]]></content>
     
