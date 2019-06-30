@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-30T05:05:43.464Z</updated>
+  <updated>2019-06-30T05:18:16.712Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com//post/12096/"/>
     <id>http://yoursite.com//post/12096/</id>
     <published>2019-06-30T04:16:17.000Z</published>
-    <updated>2019-06-30T05:05:43.464Z</updated>
+    <updated>2019-06-30T05:18:16.712Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Discontinuity"><a href="#Discontinuity" class="headerlink" title="Discontinuity"></a>Discontinuity</h1><p>When functions are not continuous, limits and derivatives may be undefined. There are different kind of discontinuities.</p><h2 id="Jump-Discontinuities"><a href="#Jump-Discontinuities" class="headerlink" title="Jump Discontinuities"></a>Jump Discontinuities</h2><p>It occurs when the right and left side limits exist but are not equal. See the following example.<br><img src="/post/12096/photo1.PNG"></p><h2 id="Removable-Discontinuities"><a href="#Removable-Discontinuities" class="headerlink" title="Removable Discontinuities"></a>Removable Discontinuities</h2><p>The left-hand and right-hand limits are equal but either the function is not defined or not equal to these limits.<br><img src="/post/12096/photo2.PNG"></p><h2 id="Infinite-Discontinuities"><a href="#Infinite-Discontinuities" class="headerlink" title="Infinite Discontinuities"></a>Infinite Discontinuities</h2><p>The left-hand and right-hand limits are infinite<br><img src="/post/12096/photo3.PNG"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Discontinuity"><a href="#Discontinuity" class="headerlink" title="Discontinuity"></a>Discontinuity</h1><p>When functions are not continuous, limits and derivatives may be undefined. There are different kind of discontinuities.</p><h2 id="Jump-Discontinuities"><a href="#Jump-Discontinuities" class="headerlink" title="Jump Discontinuities"></a>Jump Discontinuities</h2><p>It occurs when the right and left side limits exist but are not equal. See the following example.<br><img src="/post/12096/photo1.PNG"></p><h2 id="Removable-Discontinuities"><a href="#Removable-Discontinuities" class="headerlink" title="Removable Discontinuities"></a>Removable Discontinuities</h2><p>The left-hand and right-hand limits are equal but either the function is not defined or not equal to these limits.<br><img src="/post/12096/photo2.PNG"></p><h2 id="Infinite-Discontinuities"><a href="#Infinite-Discontinuities" class="headerlink" title="Infinite Discontinuities"></a>Infinite Discontinuities</h2><p>The left-hand and right-hand limits are infinite<br><img src="/post/12096/photo3.PNG"></p><h2 id="Other-Discontinuities"><a href="#Other-Discontinuities" class="headerlink" title="Other Discontinuities"></a>Other Discontinuities</h2><img src="/post/12096/photo4.PNG"><h2 id="Differentiable-Implies-Continuous"><a href="#Differentiable-Implies-Continuous" class="headerlink" title="Differentiable Implies Continuous"></a>Differentiable Implies Continuous</h2><img src="/post/12096/photo5.PNG">]]></content>
     
     <summary type="html">
     
