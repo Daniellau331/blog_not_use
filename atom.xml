@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-30T04:15:05.329Z</updated>
+  <updated>2019-06-30T04:21:56.565Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Single Variable Calculus - Continuous but Not Smooth</title>
+    <title>Single Variable Calculus - Definition and Basic Rules (2)</title>
+    <link href="http://yoursite.com//post/12096/"/>
+    <id>http://yoursite.com//post/12096/</id>
+    <published>2019-06-30T04:16:17.000Z</published>
+    <updated>2019-06-30T04:21:56.565Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Discontinuity"><a href="#Discontinuity" class="headerlink" title="Discontinuity"></a>Discontinuity</h1><p>When functions are not continuous, limits and derivatives may be undefined. There are different kind of discontinuities.</p><h2 id="Jump-Discontinuities"><a href="#Jump-Discontinuities" class="headerlink" title="Jump Discontinuities"></a>Jump Discontinuities</h2><p>It occurs when the right and left side limits exist but are not equal. See the following example.<br><img src="/post/undefined/photo1.PNG"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Discontinuity&quot;&gt;&lt;a href=&quot;#Discontinuity&quot; class=&quot;headerlink&quot; title=&quot;Discontinuity&quot;&gt;&lt;/a&gt;Discontinuity&lt;/h1&gt;&lt;p&gt;When functions are not con
+      
+    
+    </summary>
+    
+    
+      <category term="Single Variable Calculus" scheme="http://yoursite.com/tags/Single-Variable-Calculus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Single Variable Calculus - Continuous but Not Smooth (Question)</title>
     <link href="http://yoursite.com//post/64493/"/>
     <id>http://yoursite.com//post/64493/</id>
     <published>2019-06-30T03:43:03.000Z</published>
-    <updated>2019-06-30T04:15:05.329Z</updated>
+    <updated>2019-06-30T04:16:05.288Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h1><img src="/post/64493/photo1.PNG"><h1 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h1><img src="/post/64493/photo2.PNG">]]></content>
     
@@ -471,30 +494,6 @@
       
     
     </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>節約用水的良方</title>
-    <link href="http://yoursite.com//post/28294/"/>
-    <id>http://yoursite.com//post/28294/</id>
-    <published>2019-04-16T02:46:03.000Z</published>
-    <updated>2019-04-16T04:59:03.909Z</updated>
-    
-    <content type="html"><![CDATA[<p>昨天我們家的熱水器壞了，所以被迫要洗一個冷水澡。我所住的地方晚上比較冷，所以水變的很冷。我記得昨天洗的澡是我從出生到現在用時最短的一次，不到兩分鐘。我想，如果我們家不去修這個熱水器的話，我們一年肯定能省很多的水……</p><p>另外，因為這一件事情，我才知道原來有些熱水器的加熱方法是：明火在底下燒……長見識了哈哈！</p><p>剛剛我和媽媽打了個電話，她說我們家的熱水器一直都是這樣的……原來我的觀察力差，好吧……</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;昨天我們家的熱水器壞了，所以被迫要洗一個冷水澡。我所住的地方晚上比較冷，所以水變的很冷。我記得昨天洗的澡是我從出生到現在用時最短的一次，不到兩分鐘。我想，如果我們家不去修這個熱水器的話，我們一年肯定能省很多的水……&lt;/p&gt;
-&lt;p&gt;另外，因為這一件事情，我才知道原來有些熱水器
-      
-    
-    </summary>
-    
-      <category term="生活點滴" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB%E9%BB%9E%E6%BB%B4/"/>
     
     
   </entry>
