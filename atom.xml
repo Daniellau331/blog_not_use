@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-30T00:32:15.074Z</updated>
+  <updated>2019-06-30T00:52:51.994Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Single Variable Calculus - Definition and Basic Rules (1)</title>
+    <title>Single Variable Calculus - Definition and Basic Rules (2)</title>
     <link href="http://yoursite.com//post/57152/"/>
     <id>http://yoursite.com//post/57152/</id>
     <published>2019-06-30T00:22:03.000Z</published>
-    <updated>2019-06-30T00:32:15.074Z</updated>
+    <updated>2019-06-30T00:52:51.994Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Rates-of-Change"><a href="#Rates-of-Change" class="headerlink" title="Rates of Change"></a>Rates of Change</h1><img src="/post/undefined/photo1.PNG">]]></content>
+    <content type="html"><![CDATA[<h1 id="Rates-of-Change"><a href="#Rates-of-Change" class="headerlink" title="Rates of Change"></a>Rates of Change</h1><img src="/post/57152/photo1.PNG"><h1 id="Limits-and-Continuity"><a href="#Limits-and-Continuity" class="headerlink" title="Limits and Continuity"></a>Limits and Continuity</h1><h2 id="Easy-Limits"><a href="#Easy-Limits" class="headerlink" title="Easy Limits"></a>Easy Limits</h2><p>There are some easy limits. You can get a answer by plugging in the limiting value.</p><h2 id="Derivative"><a href="#Derivative" class="headerlink" title="Derivative"></a>Derivative</h2><p>Some limits are difficult to compute, because the deominator Δx = 0 is not allowed. Cancellation are needed before we compute the limit. It is possible to see the answer that there is no limit.</p><h3 id="right-hand-or-left-hand-limits"><a href="#right-hand-or-left-hand-limits" class="headerlink" title="right-hand or left-hand limits"></a>right-hand or left-hand limits</h3><p>right-hand limit means that you should use values of x that are greater than x0.<br><img src="/post/57152/photo2.PNG"></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;Rates-of-Change&quot;&gt;&lt;a href=&quot;#Rates-of-Change&quot; class=&quot;headerlink&quot; title=&quot;Rates of Change&quot;&gt;&lt;/a&gt;Rates of Change&lt;/h1&gt;&lt;img src=&quot;/post/undef
+        &lt;h1 id=&quot;Rates-of-Change&quot;&gt;&lt;a href=&quot;#Rates-of-Change&quot; class=&quot;headerlink&quot; title=&quot;Rates of Change&quot;&gt;&lt;/a&gt;Rates of Change&lt;/h1&gt;&lt;img src=&quot;/post/57152
       
     
     </summary>
