@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-29T23:59:58.843Z</updated>
+  <updated>2019-06-30T00:16:22.480Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Single Variable Calculus - the Derivative of |X|</title>
+    <link href="http://yoursite.com//post/33835/"/>
+    <id>http://yoursite.com//post/33835/</id>
+    <published>2019-06-30T00:15:54.000Z</published>
+    <updated>2019-06-30T00:16:22.480Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Single Variable Calculus - Definition and Basic Rules (1)</title>
@@ -483,35 +497,6 @@
       <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
     
       <category term="oneNote" scheme="http://yoursite.com/tags/oneNote/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo Blog的useful Links</title>
-    <link href="http://yoursite.com//post/37442/"/>
-    <id>http://yoursite.com//post/37442/</id>
-    <published>2019-04-16T00:39:57.000Z</published>
-    <updated>2019-04-16T01:31:37.813Z</updated>
-    
-    <content type="html"><![CDATA[<p>由於現在會經常去寫blog，所以在這留幾個可能我以後會用到的links。</p><ul><li><a href="https://markdown.tw/" target="_blank" rel="noopener">https://markdown.tw/</a></li><li><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;由於現在會經常去寫blog，所以在這留幾個可能我以後會用到的links。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://markdown.tw/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://markdown.tw/&lt;/a&gt;&lt;
-      
-    
-    </summary>
-    
-      <category term="學習" scheme="http://yoursite.com/categories/%E5%AD%B8%E7%BF%92/"/>
-    
-    
-      <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
