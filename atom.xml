@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-30T03:45:16.099Z</updated>
+  <updated>2019-06-30T04:15:05.329Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,15 +21,16 @@
     <link href="http://yoursite.com//post/64493/"/>
     <id>http://yoursite.com//post/64493/</id>
     <published>2019-06-30T03:43:03.000Z</published>
-    <updated>2019-06-30T03:45:16.099Z</updated>
+    <updated>2019-06-30T04:15:05.329Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h1><img src="/post/undefined/photo1.PNG">]]></content>
+    <content type="html"><![CDATA[<h1 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h1><img src="/post/64493/photo1.PNG"><h1 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h1><img src="/post/64493/photo2.PNG">]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;Question&quot;&gt;&lt;a href=&quot;#Question&quot; class=&quot;headerlink&quot; title=&quot;Question&quot;&gt;&lt;/a&gt;Question&lt;/h1&gt;&lt;img src=&quot;/post/undefined/photo1.PNG&quot;&gt;
+        &lt;h1 id=&quot;Question&quot;&gt;&lt;a href=&quot;#Question&quot; class=&quot;headerlink&quot; title=&quot;Question&quot;&gt;&lt;/a&gt;Question&lt;/h1&gt;&lt;img src=&quot;/post/64493/photo1.PNG&quot;&gt;
+&lt;h1 id=&quot;Answer
       
     
     </summary>
