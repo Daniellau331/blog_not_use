@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-02T07:04:16.829Z</updated>
+  <updated>2019-07-02T19:27:43.009Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>LeetCode練習 - 7.Two Sum</title>
+    <title>LeetCode練習 - 7.Reverse Integer</title>
     <link href="http://yoursite.com//post/23303/"/>
     <id>http://yoursite.com//post/23303/</id>
     <published>2019-07-02T07:04:16.000Z</published>
-    <updated>2019-07-02T07:04:16.829Z</updated>
+    <updated>2019-07-02T19:27:43.009Z</updated>
     
     <content type="html"><![CDATA[<h1 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h1><p>Given a 32-bit signed integer, reverse digits of an integer.</p><h1 id="解題"><a href="#解題" class="headerlink" title="解題"></a>解題</h1><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>把一個int倒轉，並且要保留其原本的sign，即負數倒轉後也是負數。<br>基本的思路是：</p><ul><li>提取數字的最後一位</li><li>抹走數字的最後一位數</li><li>variable乘10和把最後一位數加到一個variable</li><li>重複做上面的東西，直到提取完所有的數字</li></ul><h2 id="重要的知識點"><a href="#重要的知識點" class="headerlink" title="重要的知識點"></a>重要的知識點</h2><p>我猜這一題主要想考各位的，是如何提取數字的digital。</p><p>提取一個數字最後一位的方法：<br>把該數%10，就可拿到最後一位的數了。</p><p>抹走一個數的最後一位的方法：<br>把該數/10，就可以抹走最後一位的數了。</p><h2 id="值得注意的事"><a href="#值得注意的事" class="headerlink" title="值得注意的事"></a>值得注意的事</h2><p>在計算機，一個負數mod一個正數，結果會是一個負數。這結果跟數學不一樣，在數學的世界裡，這應該也是正數。</p><p>具體代碼：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">int</span> rev = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(x!=<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="keyword">int</span> n = x%<span class="number">10</span>;</span><br><span class="line">    x=x/<span class="number">10</span>;</span><br><span class="line">    <span class="keyword">if</span>(rev&gt;INT_MAX||rev&lt;INT_MIN) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">if</span>(rev*<span class="number">10</span>&gt;INT_MAX||rev*<span class="number">10</span>&lt;INT_MIN) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    rev = rev*<span class="number">10</span> + n;</span><br><span class="line">&#125;</span><br><span class="line">        <span class="keyword">return</span> rev;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>]]></content>
     
