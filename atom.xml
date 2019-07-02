@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-02T19:27:43.009Z</updated>
+  <updated>2019-07-02T20:01:43.236Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode練習 - 9.Palindrome Number</title>
+    <link href="http://yoursite.com//post/39209/"/>
+    <id>http://yoursite.com//post/39209/</id>
+    <published>2019-07-02T20:01:43.000Z</published>
+    <updated>2019-07-02T20:01:43.236Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h1><p>Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.</p><h1 id="解題"><a href="#解題" class="headerlink" title="解題"></a>解題</h1><p>這條題目跟上次分享的第7題-reverse integer很同似。核心的東西基本上没有變，你看代碼的碼就能發現和上次那一題差不多。所以這題就不詳細寫了。</p><h2 id="相關題目"><a href="#相關題目" class="headerlink" title="相關題目"></a>相關題目</h2><ul><li><a href="/post/23303">LeetCode練習 - 7.Reverse Integer</a></li></ul><h2 id="代碼"><a href="#代碼" class="headerlink" title="代碼"></a>代碼</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isPalindrome</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(x&lt;<span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">int</span> org = x;</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">int</span> rev = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(x!=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">int</span> n = x%<span class="number">10</span>;</span><br><span class="line">            x = x/<span class="number">10</span>;</span><br><span class="line">            <span class="keyword">if</span>(rev*<span class="number">10</span>&gt;INT_MAX||rev&gt;INT_MAX) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            rev = rev*<span class="number">10</span>+n;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(rev==org) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;題目&quot;&gt;&lt;a href=&quot;#題目&quot; class=&quot;headerlink&quot; title=&quot;題目&quot;&gt;&lt;/a&gt;題目&lt;/h1&gt;&lt;p&gt;Determine whether an integer is a palindrome. An integer is a palindro
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+      <category term="Easy" scheme="http://yoursite.com/tags/Easy/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode練習 - 7.Reverse Integer</title>
@@ -471,30 +496,6 @@
         &lt;p&gt;每快到我舅舅生日時，我就會想起她，因為他們是同一天生日的，都是4月18日。不知道她最近還好嗎？已經很久没有聽到有關她的消息了，很久没有和她聯繫了。(她不理我，哈哈)&lt;/p&gt;
 &lt;p&gt;I want what’s best for her!&lt;/p&gt;
 &lt;p&gt;哈哈，我早上的時候給她發
-      
-    
-    </summary>
-    
-      <category term="生活點滴" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB%E9%BB%9E%E6%BB%B4/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>今天我煮飯，哈</title>
-    <link href="http://yoursite.com//post/21374/"/>
-    <id>http://yoursite.com//post/21374/</id>
-    <published>2019-04-16T19:21:14.000Z</published>
-    <updated>2019-04-16T19:28:59.816Z</updated>
-    
-    <content type="html"><![CDATA[<p>中午時在想，今晚該煮什麼東西吃。最後決定了晚餐就吃意粉吧。意粉算是最好煮的晚餐啦。<br><img src="/post/21374/photo1.PNG"><br><img src="/post/21374/photo2.PNG"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;中午時在想，今晚該煮什麼東西吃。最後決定了晚餐就吃意粉吧。意粉算是最好煮的晚餐啦。&lt;br&gt;&lt;img src=&quot;/post/21374/photo1.PNG&quot;&gt;&lt;br&gt;&lt;img src=&quot;/post/21374/photo2.PNG&quot;&gt;&lt;/p&gt;
-
       
     
     </summary>
