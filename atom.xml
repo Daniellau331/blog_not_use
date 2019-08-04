@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-04T07:13:17.435Z</updated>
+  <updated>2019-08-04T18:48:06.686Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetCode練習 - 14. Longest Common Prefix</title>
+    <link href="http://yoursite.com//post/34501/"/>
+    <id>http://yoursite.com//post/34501/</id>
+    <published>2019-08-04T18:42:06.000Z</published>
+    <updated>2019-08-04T18:48:06.686Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h1><p>Write a function to find the longest common prefix string amongst an array of strings.</p><p>If there is no common prefix, return an empty string “”.<br><img src="/post/undefined/photo1.PNG"></p><h1 id="解題"><a href="#解題" class="headerlink" title="解題"></a>解題</h1><p>這裡的while loop的三個條件：</p><ol><li>i&lt;len(first)</li><li>i&lt;len(last)</li><li>first[i]==last[i]</li></ol><h2 id="具體代碼"><a href="#具體代碼" class="headerlink" title="具體代碼"></a>具體代碼</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">longestCommonPrefix</span><span class="params">(self, strs)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type strs: List[str]</span></span><br><span class="line"><span class="string">        :rtype: str</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> strs:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">''</span></span><br><span class="line">        </span><br><span class="line">        strs.sort()</span><br><span class="line">        first = strs[<span class="number">0</span>]</span><br><span class="line">        last = strs[<span class="number">-1</span>]</span><br><span class="line">        </span><br><span class="line">        i = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> i&lt;len(first) <span class="keyword">and</span> i&lt;len(last) <span class="keyword">and</span> first[i]==last[i]:</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> first[:i]</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;題目&quot;&gt;&lt;a href=&quot;#題目&quot; class=&quot;headerlink&quot; title=&quot;題目&quot;&gt;&lt;/a&gt;題目&lt;/h1&gt;&lt;p&gt;Write a function to find the longest common prefix string amongst an a
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+      <category term="Easy" scheme="http://yoursite.com/tags/Easy/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode練習 - 13.Roman to Integer</title>
@@ -71,9 +96,9 @@
     <link href="http://yoursite.com//post/23303/"/>
     <id>http://yoursite.com//post/23303/</id>
     <published>2019-07-02T07:04:16.000Z</published>
-    <updated>2019-08-04T07:10:02.676Z</updated>
+    <updated>2019-08-04T18:42:20.932Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h1><p>Given a 32-bit signed integer, reverse digits of an integer.</p><h1 id="解題"><a href="#解題" class="headerlink" title="解題"></a>解題</h1><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>把一個int倒轉，並且要保留其原本的sign，即負數倒轉後也是負數。<br>思路：</p><ul><li>提取數字的最後一位</li><li>抹走數字的最後一位數</li><li>variable乘10和把最後一位數加到一個variable</li><li>重複做上面的東西，直到提取完所有的數字</li></ul><h2 id="重要的知識點"><a href="#重要的知識點" class="headerlink" title="重要的知識點"></a>重要的知識點</h2><p>這一題主要想考的是如何提取數字的digital(我猜是想考這個吧)。</p><p>提取一個數字最後一位的方法：<br>把該數%10，就可拿到最後一位的數了。</p><p>抹走一個數的最後一位的方法：<br>把該數/10，就可以抹走最後一位的數了。</p><h2 id="值得注意的事"><a href="#值得注意的事" class="headerlink" title="值得注意的事"></a>值得注意的事</h2><p>在計算機，一個負數mod一個正數，結果會是一個負數。這結果跟數學不一樣，在數學的世界裡，這應該也是正數。</p><p>具體代碼：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">int</span> rev = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(x!=<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="keyword">int</span> n = x%<span class="number">10</span>;</span><br><span class="line">    x=x/<span class="number">10</span>;</span><br><span class="line">    <span class="keyword">if</span>(rev&gt;INT_MAX||rev&lt;INT_MIN) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">if</span>(rev*<span class="number">10</span>&gt;INT_MAX||rev*<span class="number">10</span>&lt;INT_MIN) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    rev = rev*<span class="number">10</span> + n;</span><br><span class="line">&#125;</span><br><span class="line">        <span class="keyword">return</span> rev;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h1><p>Given a 32-bit signed integer, reverse digits of an integer.</p><h1 id="解題"><a href="#解題" class="headerlink" title="解題"></a>解題</h1><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>把一個int倒轉，並且要保留其原本的sign，即負數倒轉後也是負數。<br>思路：</p><ul><li>提取數字的最後一位</li><li>抹走數字的最後一位數</li><li>variable乘10和把最後一位數加到一個variable</li><li>重複做上面的東西，直到提取完所有的數字</li></ul><h2 id="重要的知識點"><a href="#重要的知識點" class="headerlink" title="重要的知識點"></a>重要的知識點</h2><p>這一題主要想考的是如何提取數字的digital(我猜是想考這個吧 )。</p><p>提取一個數字最後一位的方法：<br>把該數%10，就可拿到最後一位的數了。</p><p>抹走一個數的最後一位的方法：<br>把該數/10，就可以抹走最後一位的數了。</p><h2 id="值得注意的事"><a href="#值得注意的事" class="headerlink" title="值得注意的事"></a>值得注意的事</h2><p>在計算機，一個負數mod一個正數，結果會是一個負數。這結果跟數學不一樣，在數學的世界裡，這應該也是正數。</p><p>具體代碼：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">int</span> rev = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(x!=<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="keyword">int</span> n = x%<span class="number">10</span>;</span><br><span class="line">    x=x/<span class="number">10</span>;</span><br><span class="line">    <span class="keyword">if</span>(rev&gt;INT_MAX||rev&lt;INT_MIN) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">if</span>(rev*<span class="number">10</span>&gt;INT_MAX||rev*<span class="number">10</span>&lt;INT_MIN) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    rev = rev*<span class="number">10</span> + n;</span><br><span class="line">&#125;</span><br><span class="line">        <span class="keyword">return</span> rev;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
@@ -473,29 +498,6 @@
       
         &lt;img src=&quot;/post/62046/photo1.PNG&quot;&gt;
 &lt;p&gt;昨天下午我準備去洗澡時，收到這個通知書。很好心，很期待在這可以學到很多的知識。我身邊與我同年齡的朋友都基本上畢業了一年了，而我卻還有兩年要去讀。我會好好珍惜這一個機會，以前我是被逼着要去讀書，而這次是我主
-      
-    
-    </summary>
-    
-      <category term="生活點滴" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB%E9%BB%9E%E6%BB%B4/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>要開始Van Life？</title>
-    <link href="http://yoursite.com//post/15662/"/>
-    <id>http://yoursite.com//post/15662/</id>
-    <published>2019-04-19T16:38:00.000Z</published>
-    <updated>2019-04-21T04:54:30.760Z</updated>
-    
-    <content type="html"><![CDATA[<p>昨天舅舅舅媽帶我去看房車。由於昨天太陽很大，很熱，所以没有照很多相片。<br><img src="/post/15662/photo1.jpg"><br><img src="/post/15662/photo2.jpg"><br><img src="/post/15662/photo3.jpg"></p><p>房車有不同的長度，房車的內部間隔也有很多不同的選擇。哈哈，這是我第一次親身去看房車。挻有趣的。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;昨天舅舅舅媽帶我去看房車。由於昨天太陽很大，很熱，所以没有照很多相片。&lt;br&gt;&lt;img src=&quot;/post/15662/photo1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;/post/15662/photo2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;/post/15662/
       
     
     </summary>
