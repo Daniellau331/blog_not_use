@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-04T19:13:09.478Z</updated>
+  <updated>2019-08-04T21:45:43.924Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetCode練習 - 20. Valid Parentheses</title>
+    <link href="http://yoursite.com//post/37384/"/>
+    <id>http://yoursite.com//post/37384/</id>
+    <published>2019-08-04T21:43:49.000Z</published>
+    <updated>2019-08-04T21:45:43.924Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h1><blockquote><p>Given a string containing just the characters ‘(‘, ‘)’, ‘{‘, ‘}’, ‘[‘ and ‘]’, determine if the input string is valid.</p></blockquote><blockquote><p>An input string is valid if:</p></blockquote><blockquote><p>Open brackets must be closed by the same type of brackets.<br>Open brackets must be closed in the correct order.<br>Note that an empty string is also considered valid.</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;題目&quot;&gt;&lt;a href=&quot;#題目&quot; class=&quot;headerlink&quot; title=&quot;題目&quot;&gt;&lt;/a&gt;題目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Given a string containing just the characters ‘(‘, ‘)’, ‘
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+      <category term="Easy" scheme="http://yoursite.com/tags/Easy/"/>
+    
+  </entry>
   
   <entry>
     <title>leetCode練習 - 14. Longest Common Prefix</title>
@@ -480,30 +506,6 @@
     
     
       <category term="日記" scheme="http://yoursite.com/tags/%E6%97%A5%E8%A8%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>收到大學的通知</title>
-    <link href="http://yoursite.com//post/62046/"/>
-    <id>http://yoursite.com//post/62046/</id>
-    <published>2019-04-21T04:59:32.000Z</published>
-    <updated>2019-04-21T18:42:41.921Z</updated>
-    
-    <content type="html"><![CDATA[<img src="/post/62046/photo1.PNG"><p>昨天下午我準備去洗澡時，收到這個通知書。很好心，很期待在這可以學到很多的知識。我身邊與我同年齡的朋友都基本上畢業了一年了，而我卻還有兩年要去讀。我會好好珍惜這一個機會，以前我是被逼着要去讀書，而這次是我主動要去讀的。我知道我為什麼讀，我有清晰的目標和足夠的動力。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;img src=&quot;/post/62046/photo1.PNG&quot;&gt;
-&lt;p&gt;昨天下午我準備去洗澡時，收到這個通知書。很好心，很期待在這可以學到很多的知識。我身邊與我同年齡的朋友都基本上畢業了一年了，而我卻還有兩年要去讀。我會好好珍惜這一個機會，以前我是被逼着要去讀書，而這次是我主
-      
-    
-    </summary>
-    
-      <category term="生活點滴" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB%E9%BB%9E%E6%BB%B4/"/>
-    
     
   </entry>
   
