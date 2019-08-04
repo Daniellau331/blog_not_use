@@ -274,7 +274,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">52</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">162</span>Reading time: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -406,7 +406,9 @@ height:50vh;
         <h1 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h1><blockquote>
 <p>Given a string containing just the characters ‘(‘, ‘)’, ‘{‘, ‘}’, ‘[‘ and ‘]’, determine if the input string is valid.<br>An input string is valid if:<br>Open brackets must be closed by the same type of brackets.<br>Open brackets must be closed in the correct order.<br>Note that an empty string is also considered valid.</p>
 </blockquote>
-
+<img src="/post/37384/photo1.PNG">
+<h1 id="解題"><a href="#解題" class="headerlink" title="解題"></a>解題</h1><p>以下方法用stack來記錄開括號。當我們遇到開括號時，我們把它存到stack中。如果我們遇到閉括號的話，我們就把stack最上的東西pop出來，判斷一下是否對應的括號。</p>
+<h2 id="代碼"><a href="#代碼" class="headerlink" title="代碼"></a>代碼</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">isValid</span><span class="params">(self, s)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type s: str</span></span><br><span class="line"><span class="string">        :rtype: bool</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        stack = []</span><br><span class="line">        match = &#123;<span class="string">'('</span>:<span class="string">')'</span>,<span class="string">'['</span>:<span class="string">']'</span>,<span class="string">'&#123;'</span>:<span class="string">'&#125;'</span>&#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> c <span class="keyword">in</span> s:</span><br><span class="line">            <span class="keyword">if</span> c <span class="keyword">in</span> match:</span><br><span class="line">                stack.append(c)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> <span class="keyword">not</span> stack <span class="keyword">or</span> match[stack.pop()] != c:</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line">                </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">not</span> stack</span><br></pre></td></tr></table></figure>
     </article>
     <!-- license  -->
     
@@ -538,7 +540,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#題目"><span class="toc-number">1.</span> <span class="toc-text">題目</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#題目"><span class="toc-number">1.</span> <span class="toc-text">題目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解題"><span class="toc-number">2.</span> <span class="toc-text">解題</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#代碼"><span class="toc-number">2.1.</span> <span class="toc-text">代碼</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
