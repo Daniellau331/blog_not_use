@@ -431,13 +431,13 @@ Done
         <div class="abstract-content">
             題目Write a function to find the longest common prefix string amongst an array of strings.
 If there is no common prefix, return an empty string “”.
-解題這裡的while loop的三個條件：
+解題
+把數組sort一遍
+拿數組第一個和最後一個的單詞(它們是差異是最大的)  - 我們在找common prefix，所以只需要有一個單詞没有這prefix，就可以輸出””
+比較第一個和最後一個的單詞，記錄common prefix到哪一個index
+返回第一個單詞從0到index的字母
 
-i&lt;len(first)
-i&lt;len(last)
-first[i]==last[i]
-
-具體代碼123456789101112131415161718class Solution(object):    def longestCommonPre...
+具體代碼...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
