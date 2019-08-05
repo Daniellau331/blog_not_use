@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-05T05:14:22.187Z</updated>
+  <updated>2019-08-05T06:05:21.770Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>leetCode練習 - 26. Remove Duplicates From Sorted Array</title>
+    <link href="http://yoursite.com//post/46361/"/>
+    <id>http://yoursite.com//post/46361/</id>
+    <published>2019-08-05T05:44:04.000Z</published>
+    <updated>2019-08-05T06:05:21.770Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h1><blockquote><p>Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.</p></blockquote><blockquote><p>Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.</p></blockquote><h1 id="解題"><a href="#解題" class="headerlink" title="解題"></a>解題</h1><p>用兩個pointers，一快一慢。快的是用來loop那個list的，而慢的是用來寫入没有重複的數字。</p><h2 id="代碼"><a href="#代碼" class="headerlink" title="代碼"></a>代碼</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">removeDuplicates</span><span class="params">(self, nums)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: int</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line"></span><br><span class="line">        slow = <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> fast <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">            <span class="keyword">if</span> fast == <span class="number">0</span> <span class="keyword">or</span> nums[fast<span class="number">-1</span>]!=nums[fast]:</span><br><span class="line">                nums[slow]=nums[fast]</span><br><span class="line">                slow+=<span class="number">1</span></span><br><span class="line">                </span><br><span class="line">        <span class="keyword">return</span> slow</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;題目&quot;&gt;&lt;a href=&quot;#題目&quot; class=&quot;headerlink&quot; title=&quot;題目&quot;&gt;&lt;/a&gt;題目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Given a sorted array nums, remove the duplicates in-place
+      
+    
+    </summary>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+      <category term="Easy" scheme="http://yoursite.com/tags/Easy/"/>
+    
+  </entry>
+  
+  <entry>
     <title>leetCode練習 - 21. Merge Two Sorted Lists</title>
     <link href="http://yoursite.com//post/32231/"/>
     <id>http://yoursite.com//post/32231/</id>
     <published>2019-08-05T05:06:28.000Z</published>
-    <updated>2019-08-05T05:14:22.187Z</updated>
+    <updated>2019-08-05T05:14:32.015Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h1><blockquote><p>Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.</p></blockquote><img src="/post/undefined/photo1.PNG"><h1 id="解題"><a href="#解題" class="headerlink" title="解題"></a>解題</h1><p>這題基本上就是比一下兩個linked lists第一個node的value，拿小的(由於兩個linked list都是sorted，所以比較大家第一個node就行了)，然後去造一個新的linked lists。</p><h2 id="代碼"><a href="#代碼" class="headerlink" title="代碼"></a>代碼</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode(object):</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.next = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">mergeTwoLists</span><span class="params">(self, l1, l2)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type l1: ListNode</span></span><br><span class="line"><span class="string">        :type l2: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">  </span><br><span class="line">        result = dummy = ListNode(<span class="keyword">None</span>)</span><br><span class="line">    </span><br><span class="line">        <span class="keyword">while</span> l1 <span class="keyword">and</span> l2:</span><br><span class="line">            <span class="keyword">if</span> l1.val&lt;l2.val:</span><br><span class="line">                dummy.next = l1</span><br><span class="line">                l1 = l1.next</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                dummy.next = l2</span><br><span class="line">                l2 = l2.next</span><br><span class="line">            dummy = dummy.next</span><br><span class="line">            </span><br><span class="line">        dummy.next = l1 <span class="keyword">or</span> l2</span><br><span class="line">        <span class="keyword">return</span> result.next</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h1><blockquote><p>Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.</p></blockquote><img src="/post/32231/photo1.PNG"><h1 id="解題"><a href="#解題" class="headerlink" title="解題"></a>解題</h1><p>這題基本上就是比一下兩個linked lists第一個node的value，拿小的(由於兩個linked list都是sorted，所以比較大家第一個node就行了)，然後去造一個新的linked lists。</p><h2 id="代碼"><a href="#代碼" class="headerlink" title="代碼"></a>代碼</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode(object):</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.next = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">mergeTwoLists</span><span class="params">(self, l1, l2)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type l1: ListNode</span></span><br><span class="line"><span class="string">        :type l2: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">  </span><br><span class="line">        result = dummy = ListNode(<span class="keyword">None</span>)</span><br><span class="line">    </span><br><span class="line">        <span class="keyword">while</span> l1 <span class="keyword">and</span> l2:</span><br><span class="line">            <span class="keyword">if</span> l1.val&lt;l2.val:</span><br><span class="line">                dummy.next = l1</span><br><span class="line">                l1 = l1.next</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                dummy.next = l2</span><br><span class="line">                l2 = l2.next</span><br><span class="line">            dummy = dummy.next</span><br><span class="line">            </span><br><span class="line">        dummy.next = l1 <span class="keyword">or</span> l2</span><br><span class="line">        <span class="keyword">return</span> result.next</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -479,32 +505,6 @@
     
       <category term="生活點滴" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB%E9%BB%9E%E6%BB%B4/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>日記 - 042219</title>
-    <link href="http://yoursite.com//post/11781/"/>
-    <id>http://yoursite.com//post/11781/</id>
-    <published>2019-04-22T18:38:19.000Z</published>
-    <updated>2019-04-26T05:35:38.894Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天發現了一個叫timing的app，這是一個供多一起學習的app。具體有什麼的功能，我暫時也不太清楚。但其實有一個能功是，可以快拍自己學習的視頻。今天打算試試去玩一下這。</p><p>另外，今天還了一個手工藝品(能吃的)。下個月是我舅媽外甥的生日，所以她想為他親自做一個生日蛋糕。這個生日蛋糕是以鯊魚為主題的。一會我會放一些照片在這。<br><img src="/post/11781/photo1.jpg"><br><img src="/post/11781/photo2.jpg"><br><img src="/post/11781/photo3.jpg"></p><h1 id="今日句子"><a href="#今日句子" class="headerlink" title="今日句子"></a>今日句子</h1><p>When someone says, I want a programming language in which I need only say what I wish done, give him a lollipop. -Alan Perlis</p><p>The “real meat” of history is ideas and ideals that have proved their worth in practical use.</p><p>The ultimate aim of pragramming is always to produce useful systems.</p><p>we cannot not have all of the good properties because several of the properties are mutually exclusive.</p><h1 id="今日英語單詞"><a href="#今日英語單詞" class="headerlink" title="今日英語單詞"></a>今日英語單詞</h1><ul><li>bunk (N-count) 鋪位  History is a bunk. 95% of everthing is bunk.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;今天發現了一個叫timing的app，這是一個供多一起學習的app。具體有什麼的功能，我暫時也不太清楚。但其實有一個能功是，可以快拍自己學習的視頻。今天打算試試去玩一下這。&lt;/p&gt;
-&lt;p&gt;另外，今天還了一個手工藝品(能吃的)。下個月是我舅媽外甥的生日，所以她想為他親自做一個
-      
-    
-    </summary>
-    
-      <category term="生活點滴" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB%E9%BB%9E%E6%BB%B4/"/>
-    
-    
-      <category term="日記" scheme="http://yoursite.com/tags/%E6%97%A5%E8%A8%98/"/>
     
   </entry>
   

@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>要開始Van Life？ · Daniel&#39;s Farmland</title>
+    <title>leetCode練習 - 26. Remove Duplicates From Sorted Array · Daniel&#39;s Farmland</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">Daniel&#39;s Farmland</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">要開始Van Life？</a>
+                <a href="#" class="post-name">leetCode練習 - 26. Remove Duplicates From Sorted Array</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            要開始Van Life？
+            leetCode練習 - 26. Remove Duplicates From Sorted Array
             <!-- 404 -->
             
         </h1>
@@ -264,14 +264,22 @@ height:50vh;
             <div class="post-intros">
                 <!-- 文章页标签  -->
                 
+                    <div class="post-intro-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="LeetCode">LeetCode</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Easy">Easy</a>
+    
+</div>
+                
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">73</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">122</span>Reading time: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/04/19</span>
+                    <span class="post-intro-time">2019/08/04</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -395,9 +403,14 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>昨天舅舅舅媽帶我去看房車。由於昨天太陽很大，很熱，所以没有照很多相片。<br><img src="/post/15662/photo1.jpg"><br><img src="/post/15662/photo2.jpg"><br><img src="/post/15662/photo3.jpg"></p>
-<p>房車有不同的長度，房車的內部間隔也有很多不同的選擇。哈哈，這是我第一次親身去看房車。挻有趣的。</p>
-
+        <h1 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h1><blockquote>
+<p>Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.</p>
+</blockquote>
+<blockquote>
+<p>Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.</p>
+</blockquote>
+<h1 id="解題"><a href="#解題" class="headerlink" title="解題"></a>解題</h1><p>用兩個pointers，一快一慢。快的是用來loop那個list的，而慢的是用來寫入没有重複的數字。</p>
+<h2 id="代碼"><a href="#代碼" class="headerlink" title="代碼"></a>代碼</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">removeDuplicates</span><span class="params">(self, nums)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: int</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line"></span><br><span class="line">        slow = <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> fast <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">            <span class="keyword">if</span> fast == <span class="number">0</span> <span class="keyword">or</span> nums[fast<span class="number">-1</span>]!=nums[fast]:</span><br><span class="line">                nums[slow]=nums[fast]</span><br><span class="line">                slow+=<span class="number">1</span></span><br><span class="line">                </span><br><span class="line">        <span class="keyword">return</span> slow</span><br></pre></td></tr></table></figure>
     </article>
     <!-- license  -->
     
@@ -405,17 +418,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/post/62046/" title="收到大學的通知">
-                    <div class="nextTitle">收到大學的通知</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/post/63041/" title="她還好嗎？">
-                    <div class="prevTitle">她還好嗎？</div>
+                <a href="/post/32231/" title="leetCode練習 - 21. Merge Two Sorted Lists">
+                    <div class="prevTitle">leetCode練習 - 21. Merge Two Sorted Lists</div>
                 </a>
             
         </li>
@@ -534,7 +542,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#題目"><span class="toc-number">1.</span> <span class="toc-text">題目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解題"><span class="toc-number">2.</span> <span class="toc-text">解題</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#代碼"><span class="toc-number">2.1.</span> <span class="toc-text">代碼</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>

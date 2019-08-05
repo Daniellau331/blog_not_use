@@ -406,7 +406,7 @@ height:50vh;
         <h1 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h1><blockquote>
 <p>Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.</p>
 </blockquote>
-<img src="/post/undefined/photo1.PNG">
+<img src="/post/32231/photo1.PNG">
 <h1 id="解題"><a href="#解題" class="headerlink" title="解題"></a>解題</h1><p>這題基本上就是比一下兩個linked lists第一個node的value，拿小的(由於兩個linked list都是sorted，所以比較大家第一個node就行了)，然後去造一個新的linked lists。</p>
 <h2 id="代碼"><a href="#代碼" class="headerlink" title="代碼"></a>代碼</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode(object):</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.next = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">mergeTwoLists</span><span class="params">(self, l1, l2)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type l1: ListNode</span></span><br><span class="line"><span class="string">        :type l2: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">  </span><br><span class="line">        result = dummy = ListNode(<span class="keyword">None</span>)</span><br><span class="line">    </span><br><span class="line">        <span class="keyword">while</span> l1 <span class="keyword">and</span> l2:</span><br><span class="line">            <span class="keyword">if</span> l1.val&lt;l2.val:</span><br><span class="line">                dummy.next = l1</span><br><span class="line">                l1 = l1.next</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                dummy.next = l2</span><br><span class="line">                l2 = l2.next</span><br><span class="line">            dummy = dummy.next</span><br><span class="line">            </span><br><span class="line">        dummy.next = l1 <span class="keyword">or</span> l2</span><br><span class="line">        <span class="keyword">return</span> result.next</span><br></pre></td></tr></table></figure>
     </article>
@@ -415,6 +415,11 @@ height:50vh;
     <!-- paginator  -->
     <ul class="post-paginator">
         <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href="/post/46361/" title="leetCode練習 - 26. Remove Duplicates From Sorted Array">
+                    <div class="nextTitle">leetCode練習 - 26. Remove Duplicates From Sorted Array</div>
+                </a>
             
         </li>
         <li class="previous">
@@ -981,9 +986,24 @@ top:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 36
+        Total : 37
         </div>
         <!-- search  -->
         
@@ -1000,6 +1020,11 @@ top:50vh;
     
         <li class="archive-post-item">
             <span class="archive-post-date">08/04</span><a class="archive-post-title" href="/post/32231/">leetCode練習 - 21. Merge Two Sorted Lists</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/04</span><a class="archive-post-title" href="/post/46361/">leetCode練習 - 26. Remove Duplicates From Sorted Array</a>
         </li>
     
     
@@ -1079,12 +1104,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">06/12</span><a class="archive-post-title" href="/post/43644/">日記 - 061219</a>
+            <span class="archive-post-date">06/12</span><a class="archive-post-title" href="/post/43097/">IPA - 筆記</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">06/12</span><a class="archive-post-title" href="/post/43097/">IPA - 筆記</a>
+            <span class="archive-post-date">06/12</span><a class="archive-post-title" href="/post/43644/">日記 - 061219</a>
         </li>
     
     
@@ -1191,11 +1216,11 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="瞎逼叨"><span class="iconfont-archer">&#xe606;</span>瞎逼叨</span>
+        <span class="sidebar-tag-name" data-tags="計劃"><span class="iconfont-archer">&#xe606;</span>計劃</span>
     
         <span class="sidebar-tag-name" data-tags="Single Variable Calculus"><span class="iconfont-archer">&#xe606;</span>Single Variable Calculus</span>
     
-        <span class="sidebar-tag-name" data-tags="計劃"><span class="iconfont-archer">&#xe606;</span>計劃</span>
+        <span class="sidebar-tag-name" data-tags="瞎逼叨"><span class="iconfont-archer">&#xe606;</span>瞎逼叨</span>
     
         <span class="sidebar-tag-name" data-tags="LeetCode"><span class="iconfont-archer">&#xe606;</span>LeetCode</span>
     
@@ -1207,11 +1232,11 @@ top:50vh;
     
         <span class="sidebar-tag-name" data-tags="oneNote"><span class="iconfont-archer">&#xe606;</span>oneNote</span>
     
-        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
-    
         <span class="sidebar-tag-name" data-tags="data structure"><span class="iconfont-archer">&#xe606;</span>data structure</span>
     
         <span class="sidebar-tag-name" data-tags="tree"><span class="iconfont-archer">&#xe606;</span>tree</span>
+    
+        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
     
         <span class="sidebar-tag-name" data-tags="日記"><span class="iconfont-archer">&#xe606;</span>日記</span>
     
