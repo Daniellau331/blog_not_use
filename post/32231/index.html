@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Binary Tree筆記 · Daniel&#39;s Farmland</title>
+    <title>leetCode練習 - 21. Merge Two Sorted Lists · Daniel&#39;s Farmland</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">Daniel&#39;s Farmland</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">Binary Tree筆記</a>
+                <a href="#" class="post-name">leetCode練習 - 21. Merge Two Sorted Lists</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Binary Tree筆記
+            leetCode練習 - 21. Merge Two Sorted Lists
             <!-- 404 -->
             
         </h1>
@@ -266,20 +266,20 @@ height:50vh;
                 
                     <div class="post-intro-tags">
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="data structure">data structure</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="LeetCode">LeetCode</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="tree">tree</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="Easy">Easy</a>
     
 </div>
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">906</span>Reading time: <span class="post-count reading-time">4 min</span></span>
+                        <span>Word count: <span class="post-count word-count">158</span>Reading time: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/04/15</span>
+                    <span class="post-intro-time">2019/08/04</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -403,61 +403,12 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>(建設中，請耐心等候)</p>
-<p>哈哈，今天我想寫的東西是tree。tree是一種數據結構，在計算機的世界裡是很重要的。你問我有什麼具體用途？問的好，我就舉一個用途吧。這個tree可以用在寫一個compiler，你說是不是很有用呢，哈哈！</p>
-<h1 id="tree的樣子"><a href="#tree的樣子" class="headerlink" title="tree的樣子"></a>tree的樣子</h1><img src="/post/26965/photo.PNG">
-<p>我們這個tree和平常在大自然中見到的tree樣子有一點點不一樣。主要分別是，我們這個是反的，最頂的是root，下面的是leaves。是不是很有趣呢？哈哈，我又在逗自己玩……</p>
-<p>那些A、B、C、D，我們管他們叫node，你可以放東西在他們身上。</p>
-<h1 id="什麼是Binary-Trees"><a href="#什麼是Binary-Trees" class="headerlink" title="什麼是Binary Trees"></a>什麼是Binary Trees</h1><ul>
-<li>每一個node最多只能有兩個nodes。</li>
-<li>A unique path exists form the root to every other node. (只有一條路，從root到其他的node)<img src="/post/26965/photo1.PNG">
-</li>
-</ul>
-<h1 id="Binary-search-tree"><a href="#Binary-search-tree" class="headerlink" title="Binary search tree"></a>Binary search tree</h1><p>這也是binary tree的一種，這有以下的兩個特點。</p>
-<ol>
-<li>Left child node is smaller than its parent node</li>
-<li>right child node is greater than its parent node<img src="/post/26965/photo2.PNG">
-</li>
-</ol>
-<h1 id="Binary-tree的結構"><a href="#Binary-tree的結構" class="headerlink" title="Binary tree的結構"></a>Binary tree的結構</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">TreeNode</span>&#123;</span></span><br><span class="line">	ItemType info;</span><br><span class="line">	TreeNode* left;</span><br><span class="line">	TreeNode* right;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<img src="/post/26965/photo3.PNG">
-<h1 id="Searching-for-a-value"><a href="#Searching-for-a-value" class="headerlink" title="Searching for a value"></a>Searching for a value</h1><p>接下來要講的是searching的算法</p>
-<p>以下的這個算法是<strong>不用recursion</strong>的</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">searchNoRecursion</span><span class="params">(node* leaf, <span class="keyword">int</span> key)</span></span>&#123;</span><br><span class="line">	<span class="keyword">bool</span> found = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//這算法用while loop，不用recursion，從上向下找</span></span><br><span class="line">	<span class="comment">//找不到的話，按key的大小去決定向左或是向右</span></span><br><span class="line">	<span class="keyword">while</span>(leaf!=<span class="literal">NULL</span> &amp;&amp; !found)&#123;</span><br><span class="line">		<span class="keyword">if</span>(key==leaf-&gt;key)&#123;</span><br><span class="line">			found = <span class="literal">true</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span> (key&lt;leaf-&gt;key)</span><br><span class="line">			leaf = leaf-&gt;left;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			leaf = leaf-&gt;right;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> found;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以下的這個算法是<strong>用recursion</strong>的<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">searchRecursion</span><span class="params">(node* leaf, <span class="keyword">int</span> key)</span></span>&#123;</span><br><span class="line">	<span class="keyword">bool</span> found = <span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">if</span>(leaf!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">		<span class="keyword">if</span>(key==leaf-&gt;key)&#123;</span><br><span class="line">		found=<span class="literal">true</span>;</span><br><span class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span>(key&lt;leaf-&gt;key)</span><br><span class="line">		found = searchRecursion(leaf-&gt;left,key); <span class="comment">//小的話向左下走</span></span><br><span class="line">	<span class="keyword">else</span> <span class="comment">//大的話向右下走</span></span><br><span class="line">		found = searchRecursion(leaf-&gt;right,key);</span><br><span class="line"> &#125;</span><br><span class="line"> 	<span class="keyword">return</span> found;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h1 id="Inserting-a-node"><a href="#Inserting-a-node" class="headerlink" title="Inserting a node"></a>Inserting a node</h1><p>以下的這個算法是Tail Recursive<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Insert</span> <span class="params">(node*&amp; leaf, <span class="keyword">int</span> item)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(leaf==<span class="literal">NULL</span>)&#123;</span><br><span class="line">		leaf = <span class="keyword">new</span> node;</span><br><span class="line">		leaf-&gt;right = <span class="literal">NULL</span>;</span><br><span class="line">		leaf-&gt;left = <span class="literal">NULL</span>;</span><br><span class="line">		leaf-&gt;key = item;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(item&lt;leaf-&gt;key)</span><br><span class="line">		Insert(leaf-&gt;left,item);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		Insert(leaf-&gt;right,item);		</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>有很多不同的算法都可以實現insert，但個人來說比較喜歡用以上這個。</p>
-<h1 id="Deleting-a-node"><a href="#Deleting-a-node" class="headerlink" title="Deleting a node"></a>Deleting a node</h1><p>尋求要刪除的node。一但找到之後，會有以下三個可能出現的情況。</p>
-<ol>
-<li>這個node没有children (leaf node)<ul>
-<li>直接刪，然後叫node的parent指向null</li>
-</ul>
-</li>
-<li>這個Node有一個child<ul>
-<li>將這個node指向要被刪的那node的parent</li>
-<li>刪除那個node</li>
-</ul>
-</li>
-<li>這個Node有兩個children (這有兩個選擇，但我只列其中的一個)<ul>
-<li>去右邊的那child，然後去到底。(去右邊找最小值)</li>
-<li>將這個值放到我們本來要刪的那個node</li>
-<li>刪了那個最低的child</li>
-</ul>
-</li>
-</ol>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">node* <span class="title">deleteNode</span><span class="params">(node* root, <span class="keyword">int</span> data)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(root == <span class="literal">NULL</span>) <span class="keyword">return</span> root;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(data &lt; root-&gt;data) root-&gt;left = deleteNode(root-&gt;left,data);</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span> (data &gt; root-&gt;data) root-&gt;right = deleteNode(root-&gt;right,data);</span><br><span class="line">	<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="comment">// Case 1 </span></span><br><span class="line">		<span class="keyword">if</span>(root-&gt;left == <span class="literal">NULL</span> &amp;&amp; root-&gt;right == <span class="literal">NULL</span>) &#123;</span><br><span class="line">			<span class="keyword">delete</span> root;</span><br><span class="line">			root = <span class="literal">NULL</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//Case 2</span></span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(root-&gt;left == <span class="literal">NULL</span>) &#123;</span><br><span class="line">			node *temp = root;</span><br><span class="line">			root = root-&gt;right;</span><br><span class="line">			<span class="keyword">delete</span> temp;</span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span>(root-&gt;right == <span class="literal">NULL</span>) &#123;</span><br><span class="line">			node *temp = root;</span><br><span class="line">			root = root-&gt;left;</span><br><span class="line">			<span class="keyword">delete</span> temp;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">// case 3</span></span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			node *temp = FindMin(root-&gt;right);</span><br><span class="line">			root-&gt;data = temp-&gt;data;</span><br><span class="line">			root-&gt;right = deleteNode(root-&gt;right,temp-&gt;data);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> root;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="Depth-First-traversal"><a href="#Depth-First-traversal" class="headerlink" title="Depth-First traversal"></a>Depth-First traversal</h1><p>這裡有三種depth-first traversal: pre-order, in-order and post-order。 </p>
-<h2 id="Pre-order"><a href="#Pre-order" class="headerlink" title="Pre-order"></a>Pre-order</h2><pre><code>1. Visit the root.
-2. Traverse the left subtree.
-3. Traverse the right subtree.
-</code></pre><h2 id="In-order"><a href="#In-order" class="headerlink" title="In-order"></a>In-order</h2><pre><code>1. Traverse the left subtree.
-2. Visit the root.
-3. Traverse the right subtree.
-</code></pre><h2 id="Post-order"><a href="#Post-order" class="headerlink" title="Post-order"></a>Post-order</h2><pre><code>1. Traverse the left subtree.
-2. Traverse the right subtree.
-3. Visit the root.
-</code></pre><p>這三種算法的結構是一樣的，唯一不同的只是次序。所以我在下面就只寫其中一個。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">preOrder</span><span class="params">(node* root)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(root != <span class="literal">NULL</span>)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d "</span>,root-&gt;key);</span><br><span class="line">		preOrder(root-&gt;left);</span><br><span class="line">		preOrder(root-&gt;right);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h1><blockquote>
+<p>Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.</p>
+</blockquote>
+<img src="/post/undefined/photo1.PNG">
+<h1 id="解題"><a href="#解題" class="headerlink" title="解題"></a>解題</h1><p>這題基本上就是比一下兩個linked lists第一個node的value，拿小的(由於兩個linked list都是sorted，所以比較大家第一個node就行了)，然後去造一個新的linked lists。</p>
+<h2 id="代碼"><a href="#代碼" class="headerlink" title="代碼"></a>代碼</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode(object):</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.next = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">mergeTwoLists</span><span class="params">(self, l1, l2)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type l1: ListNode</span></span><br><span class="line"><span class="string">        :type l2: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">  </span><br><span class="line">        result = dummy = ListNode(<span class="keyword">None</span>)</span><br><span class="line">    </span><br><span class="line">        <span class="keyword">while</span> l1 <span class="keyword">and</span> l2:</span><br><span class="line">            <span class="keyword">if</span> l1.val&lt;l2.val:</span><br><span class="line">                dummy.next = l1</span><br><span class="line">                l1 = l1.next</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                dummy.next = l2</span><br><span class="line">                l2 = l2.next</span><br><span class="line">            dummy = dummy.next</span><br><span class="line">            </span><br><span class="line">        dummy.next = l1 <span class="keyword">or</span> l2</span><br><span class="line">        <span class="keyword">return</span> result.next</span><br></pre></td></tr></table></figure>
     </article>
     <!-- license  -->
     
@@ -465,17 +416,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/post/28294/" title="節約用水的良方">
-                    <div class="nextTitle">節約用水的良方</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/post/28114/" title="反思-有關於blog和oneNote">
-                    <div class="prevTitle">反思-有關於blog和oneNote</div>
+                <a href="/post/37384/" title="leetCode練習 - 20. Valid Parentheses">
+                    <div class="prevTitle">leetCode練習 - 20. Valid Parentheses</div>
                 </a>
             
         </li>
@@ -594,7 +540,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#tree的樣子"><span class="toc-number">1.</span> <span class="toc-text">tree的樣子</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#什麼是Binary-Trees"><span class="toc-number">2.</span> <span class="toc-text">什麼是Binary Trees</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Binary-search-tree"><span class="toc-number">3.</span> <span class="toc-text">Binary search tree</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Binary-tree的結構"><span class="toc-number">4.</span> <span class="toc-text">Binary tree的結構</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Searching-for-a-value"><span class="toc-number">5.</span> <span class="toc-text">Searching for a value</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Inserting-a-node"><span class="toc-number">6.</span> <span class="toc-text">Inserting a node</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Deleting-a-node"><span class="toc-number">7.</span> <span class="toc-text">Deleting a node</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Depth-First-traversal"><span class="toc-number">8.</span> <span class="toc-text">Depth-First traversal</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Pre-order"><span class="toc-number">8.1.</span> <span class="toc-text">Pre-order</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#In-order"><span class="toc-number">8.2.</span> <span class="toc-text">In-order</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Post-order"><span class="toc-number">8.3.</span> <span class="toc-text">Post-order</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#題目"><span class="toc-number">1.</span> <span class="toc-text">題目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解題"><span class="toc-number">2.</span> <span class="toc-text">解題</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#代碼"><span class="toc-number">2.1.</span> <span class="toc-text">代碼</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
